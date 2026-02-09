@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Frontend",
+    "icon": "fas fa-code",
+    "skills": [
+      {"name": "HTML5", "level": 95},
+      {"name": "CSS3", "level": 90},
+      {"name": "JavaScript", "level": 85},
+      {"name": "TypeScript", "level": 70},
+      {"name": "React", "level": 80},
+      {"name": "Tailwind CSS", "level": 85}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Backend",
+    "icon": "fas fa-server",
+    "skills": [
+      {"name": "Python", "level": 90},
+      {"name": "Django", "level": 85},
+      {"name": "Java", "level": 75},
+      {"name": "C", "level": 70},
+      {"name": "REST API", "level": 80}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Базы данных",
+    "icon": "fas fa-database",
+    "skills": [
+      {"name": "PostgreSQL", "level": 80},
+      {"name": "SQL", "level": 85},
+      {"name": "SQLite", "level": 90},
+      {"name": "MongoDB", "level": 65}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Инструменты",
+    "icon": "fas fa-tools",
+    "skills": [
+      {"name": "Git", "level": 85},
+      {"name": "Telegram Bot API", "level": 90},
+      {"name": "Figma", "level": 75},
+      {"name": "VS Code", "level": 95},
+      {"name": "Netlify", "level": 80}
+    ]
+  }
+]

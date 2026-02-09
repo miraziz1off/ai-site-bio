@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Муинов Миразиз | Разработчик & Дизайнер</title>
+    <meta name="description" content="15-летний frontend- и backend-разработчик, создающий красивые и функциональные веб-интерфейсы. Люблю сложные анимации и нестандартные решения.">
+    <meta name="keywords" content="разработчик, фронтенд, бэкенд, дизайнер, портфолио, Python, JavaScript, React">
+    <meta property="og:title" content="Муинов Миразиз | Разработчик & Дизайнер">
+    <meta property="og:description" content="15-летний разработчик, создающий современные веб-приложения">
+    <meta property="og:image" content="./image.png">
+    <meta property="og:url" content="https://miraziz.dev">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-container">
+            <div class="loading-text">
+                <span class="letter" style="--i:1">L</span>
+                <span class="letter" style="--i:2">O</span>
+                <span class="letter" style="--i:3">A</span>
+                <span class="letter" style="--i:4">D</span>
+                <span class="letter" style="--i:5">I</span>
+                <span class="letter" style="--i:6">N</span>
+                <span class="letter" style="--i:7">G</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Language switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Miraziz</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Главная</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">Обо мне</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Проекты</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Навыки</a>
+                <a href="#life" class="nav-link" data-i18n="nav.life">Жизнь</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
+                <a href="#message" class="nav-link message-link" data-i18n="nav.message">Анонимное сообщение</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text" data-i18n="hero.badge">15 лет • Разработчик</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">
+                            <span class="title-word" data-i18n="hero.title1">Привет, я</span>
+                            <span class="title-name">Миразиз</span>
+                        </span>
+                        <span class="title-line">
+                            <span class="title-typed" id="typed-text"></span>
+                            <span class="typed-cursor">|</span>
+                        </span>
+                    </h1>
+                    
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        Создаю красивые и функциональные веб-интерфейсы с любовью к сложным анимациям и нестандартным решениям. Занимаюсь боксом, играю в теннис и постоянно развиваюсь.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.projectsBtn">Смотреть проекты</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero.contactBtn">Связаться</a>
+                        <a href="#message" class="btn btn-ghost" data-i18n="hero.messageBtn">Анонимное сообщение</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="projectCount">12+</span>
+                            <span class="stat-label" data-i18n="hero.projects">Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="experience">3</span>
+                            <span class="stat-label" data-i18n="hero.experience">Года опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="skillsCount">15+</span>
+                            <span class="stat-label" data-i18n="hero.skills">Навыков</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-frame">
+                            <div class="avatar-image" id="avatar"><img class="avatar-image-2" src="./image.png" alt=""></div>
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-decoration">
+                                <div class="decoration-item"></div>
+                                <div class="decoration-item"></div>
+                                <div class="decoration-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="float-element" style="--delay:0; --x:10; --y:20;">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="float-element" style="--delay:1; --x:-15; --y:10;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="float-element" style="--delay:2; --x:20; --y:-10;">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="float-element" style="--delay:3; --x:-10; --y:-20;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about.title">Обо мне</h2>
+                    <p class="section-subtitle" data-i18n="about.subtitle">Молодой, амбициозный и постоянно развивающийся</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 data-i18n="about.heading">Муинов Миразиз</h3>
+                        <p data-i18n="about.description1">
+                            В 15 лет я уже активно занимаюсь веб-разработкой, создавая как фронтенд, так и бэкенд приложений. Моя страсть — превращать сложные идеи в элегантные и интуитивно понятные интерфейсы.
+                        </p>
+                        <p data-i18n="about.description2">
+                            Помимо программирования, я занимаюсь боксом, что помогает развивать дисциплину и выносливость, и играю в теннис для поддержания концентрации и стратегического мышления. Эти качества помогают мне в разработке — находить нестандартные решения и доводить проекты до идеала.
+                        </p>
+                        <p data-i18n="about.description3">
+                            Я открыт для сотрудничества, интересных проектов и всегда рад новым знакомствам в IT-сфере. Строю личный бренд и стремлюсь выделяться среди других разработчиков своим уникальным подходом и вниманием к деталям.
+                        </p>
+                        
+                        <div class="about-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p data-i18n="about.quote">Код — это поэзия, написанная для машин, но понятная людям</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 data-i18n="about.info.age">Возраст</h4>
+                                <p>15 лет</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 data-i18n="about.info.location">Местоположение</h4>
+                                <p data-i18n="about.info.locationText">Узбекистан</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 data-i18n="about.info.education">Образование</h4>
+                                <p data-i18n="about.info.educationText">Самообразование + курсы</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 data-i18n="about.info.status">Статус</h4>
+                                <p data-i18n="about.info.statusText">Фрилансер / Ищу проекты</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card hobbies">
+                            <div class="info-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 data-i18n="about.info.hobbies">Хобби</h4>
+                                <div class="hobbies-list">
+                                    <span class="hobby-tag" data-i18n="about.hobby1">Бокс</span>
+                                    <span class="hobby-tag" data-i18n="about.hobby2">Теннис</span>
+                                    <span class="hobby-tag" data-i18n="about.hobby3">Дизайн</span>
+                                    <span class="hobby-tag" data-i18n="about.hobby4">Фотография</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <h3 class="timeline-title" data-i18n="about.timeline">Мой путь</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h4 data-i18n="about.timeline1.title">Первые шаги в программировании</h4>
+                                <p data-i18n="about.timeline1.desc">Изучение основ Python и создание первых простых скриптов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021</div>
+                            <div class="timeline-content">
+                                <h4 data-i18n="about.timeline2.title">Погружение в веб-разработку</h4>
+                                <p data-i18n="about.timeline2.desc">Изучение HTML, CSS, JavaScript и создание первых веб-сайтов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4 data-i18n="about.timeline3.title">Бэкенд и фреймворки</h4>
+                                <p data-i18n="about.timeline3.desc">Освоение Django, React, работа с базами данных и API</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h4 data-i18n="about.timeline4.title">Коммерческие проекты</h4>
+                                <p data-i18n="about.timeline4.desc">Разработка сайтов для бизнеса, Telegram-ботов и систем учета</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="projects.title">Проекты</h2>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">Мои работы, от простых сайтов до сложных систем</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Все</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="projects.filter.web">Веб-сайты</button>
+                    <button class="filter-btn" data-filter="system" data-i18n="projects.filter.system">Системы</button>
+                    <button class="filter-btn" data-filter="bot" data-i18n="projects.filter.bot">Telegram-боты</button>
+                </div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded from JSON -->
+                </div>
+                
+                <div class="github-stats">
+                    <div class="github-card">
+                        <i class="fab fa-github"></i>
+                        <h3 data-i18n="projects.github">Больше проектов на GitHub</h3>
+                        <a href="https://github.com/miraziz1off" target="_blank" class="github-link">
+                            github.com/miraziz1off
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <div class="github-stats-info">
+                            <div class="github-stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span id="repoCount">24</span>
+                                <span data-i18n="projects.repos">репозиториев</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills.title">Навыки & Технологии</h2>
+                    <p class="section-subtitle" data-i18n="skills.subtitle">Инструменты и технологии, которые я использую</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-container">
+                    <!-- Skills will be loaded from JSON -->
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="editor-title">skills.js</div>
+                        </div>
+                        <div class="editor-content">
+                            <pre><code class="javascript">
+// Мой стек технологий
+const techStack = {
+  frontend: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React"],
+  backend: ["Python", "Django", "Java", "C"],
+  databases: ["PostgreSQL", "SQL"],
+  tools: ["Git", "Tailwind", "Telegram Bot API"],
+  design: ["Figma", "Adobe XD", "UI/UX Principles"]
+};
+
+// Мои качества как разработчика
+const developerQualities = [
+  "Внимание к деталям",
+  "Страсть к анимациям",
+  "Любовь к чистому коду",
+  "Постоянное обучение",
+  "Командная работа"
+];
+
+console.log("Всегда готов к новым вызовам!");</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Life / Journal Section -->
+        <section id="life" class="life">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="life.title">Жизнь & Блог</h2>
+                    <p class="section-subtitle" data-i18n="life.subtitle">Мысли, достижения и моменты из жизни</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="life-entries" id="lifeEntries">
+                    <!-- Blog entries will be loaded from JSON -->
+                </div>
+                
+                <div class="life-actions">
+                    <button class="btn btn-outline" id="loadMoreEntries" data-i18n="life.loadMore">Загрузить больше</button>
+                    <button class="btn btn-ghost" id="addEntryBtn" data-i18n="life.addEntry">+ Добавить запись (админ)</button>
+                </div>
+                
+                <div class="mood-tracker">
+                    <h3 data-i18n="life.mood">Настроение за последнюю неделю</h3>
+                    <div class="mood-chart">
+                        <div class="mood-day" data-day="Пн" data-mood="happy"></div>
+                        <div class="mood-day" data-day="Вт" data-mood="neutral"></div>
+                        <div class="mood-day" data-day="Ср" data-mood="excited"></div>
+                        <div class="mood-day" data-day="Чт" data-mood="productive"></div>
+                        <div class="mood-day" data-day="Пт" data-mood="happy"></div>
+                        <div class="mood-day" data-day="Сб" data-mood="relaxed"></div>
+                        <div class="mood-day" data-day="Вс" data-mood="tired"></div>
+                    </div>
+                    <div class="mood-legend">
+                        <div class="legend-item">
+                            <span class="mood-icon happy"></span>
+                            <span data-i18n="life.mood.happy">Счастливый</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="mood-icon productive"></span>
+                            <span data-i18n="life.mood.productive">Продуктивный</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="mood-icon relaxed"></span>
+                            <span data-i18n="life.mood.relaxed">Расслабленный</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="mood-icon tired"></span>
+                            <span data-i18n="life.mood.tired">Уставший</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anonymous Message Section -->
+        <section id="message" class="message">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="message.title">Анонимное сообщение</h2>
+                    <p class="section-subtitle" data-i18n="message.subtitle">Отправьте мне сообщение без указания имени</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="message-container">
+                    <div class="message-info">
+                        <div class="info-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3 data-i18n="message.info.title">Полная анонимность</h3>
+                        <p data-i18n="message.info.desc">
+                            Ваше сообщение будет отправлено напрямую мне в Telegram через защищенное соединение. Никакие данные об отправителе не сохраняются.
+                        </p>
+                        <ul class="message-features">
+                            <li data-i18n="message.feature1">Без регистрации</li>
+                            <li data-i18n="message.feature2">Без сохранения данных</li>
+                            <li data-i18n="message.feature3">Без отслеживания</li>
+                            <li data-i18n="message.feature4">Защита от спама</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="message-form-container">
+                        <form id="anonymousMessageForm">
+                            <div class="form-group">
+                                <label for="messageText" data-i18n="message.form.label">Ваше сообщение:</label>
+                                <textarea 
+                                    id="messageText" 
+                                    name="message" 
+                                    rows="6" 
+                                    placeholder="Напишите что-нибудь... Совет, вопрос, отзыв или просто приветствие!"
+                                    data-i18n-placeholder="message.form.placeholder"
+                                    required
+                                    minlength="10"
+                                    maxlength="1000"></textarea>
+                                <div class="char-counter">
+                                    <span id="charCount">0</span>/1000
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label data-i18n="message.form.mood">Настроение сообщения:</label>
+                                <div class="mood-selector">
+                                    <input type="radio" name="mood" id="mood-neutral" value="neutral" checked>
+                                    <label for="mood-neutral" class="mood-option">
+                                        <i class="far fa-smile"></i>
+                                        <span data-i18n="message.mood.neutral">Нейтральное</span>
+                                    </label>
+                                    
+                                    <input type="radio" name="mood" id="mood-positive" value="positive">
+                                    <label for="mood-positive" class="mood-option">
+                                        <i class="far fa-laugh"></i>
+                                        <span data-i18n="message.mood.positive">Позитивное</span>
+                                    </label>
+                                    
+                                    <input type="radio" name="mood" id="mood-question" value="question">
+                                    <label for="mood-question" class="mood-option">
+                                        <i class="far fa-question-circle"></i>
+                                        <span data-i18n="message.mood.question">Вопрос</span>
+                                    </label>
+                                    
+                                    <input type="radio" name="mood" id="mood-feedback" value="feedback">
+                                    <label for="mood-feedback" class="mood-option">
+                                        <i class="far fa-comment-dots"></i>
+                                        <span data-i18n="message.mood.feedback">Отзыв</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="captcha-container">
+                                    <div class="captcha-question" data-i18n="message.captcha.question">Сколько будет 7 + 3?</div>
+                                    <input type="text" id="captchaAnswer" placeholder="10" data-i18n-placeholder="message.captcha.placeholder" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" id="sendMessageBtn" data-i18n="message.form.submit">
+                                    Отправить анонимно
+                                </button>
+                                <button type="button" class="btn btn-ghost" id="clearFormBtn" data-i18n="message.form.clear">
+                                    Очистить
+                                </button>
+                            </div>
+                            
+                            <div class="form-notice">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-i18n="message.notice">Защита от спама: максимум 3 сообщения в час с одного устройства</span>
+                            </div>
+                        </form>
+                        
+                        <div class="message-status" id="messageStatus">
+                            <div class="status-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <p data-i18n="message.ready">Готово к отправке</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact.title">Контакты</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Свяжитесь со мной любым удобным способом</p>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/miraziz1off" target="_blank">github.com/miraziz1off</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:miraziz1off@gmail.com">miraziz1off@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telegram</h4>
+                                <a href="https://t.me/mmuinov" target="_blank">@mmuinov</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/muinov770" target="_blank">@muinov770</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-reddit"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Reddit</h4>
+                                <a href="https://reddit.com/user/MicterRobot" target="_blank">u/MicterRobot</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>TikTok</h4>
+                                <a href="http://www.tiktok.com/mu1nov" target="_blank">@mu1nov</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-gallery">
+                        <h3 data-i18n="contact.gallery">Галерея</h3>
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- Gallery images will be loaded dynamically -->
+                        </div>
+                        <button class="btn btn-outline" id="loadMoreGallery" data-i18n="contact.loadMore">Показать больше</button>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <h3 data-i18n="contact.cta">Есть проект или идея?</h3>
+                    <p data-i18n="contact.ctaDesc">Обсудим и создадим что-то удивительное вместе!</p>
+                    <a href="#message" class="btn btn-primary" data-i18n="contact.ctaBtn">Начать разговор</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Miraziz</span>
+                        <span class="logo-dot">.</span>
+                    </a>
+                    <p class="footer-description" data-i18n="footer.description">
+                        15-летний разработчик, создающий будущее веба
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/miraziz1off" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/mmuinov" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://instagram.com/muinov770" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:miraziz1off@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.links">Ссылки</h4>
+                        <a href="#home" data-i18n="footer.home">Главная</a>
+                        <a href="#about" data-i18n="footer.about">Обо мне</a>
+                        <a href="#projects" data-i18n="footer.projects">Проекты</a>
+                        <a href="#skills" data-i18n="footer.skills">Навыки</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.more">Дополнительно</h4>
+                        <a href="#life" data-i18n="footer.life">Жизнь</a>
+                        <a href="#message" data-i18n="footer.message">Анонимное сообщение</a>
+                        <a href="#contact" data-i18n="footer.contact">Контакты</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.legal">Правовая информация</h4>
+                        <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+                        <a href="#" data-i18n="footer.terms">Условия использования</a>
+                        <a href="#" data-i18n="footer.cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2023 Муинов Миразиз. Все права защищены.</p>
+                <p class="footer-tech">
+                    <span data-i18n="footer.madeWith">Сделано с</span>
+                    <i class="fas fa-heart"></i>
+                    <span data-i18n="footer.and">и</span>
+                    <i class="fas fa-code"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin modal for adding blog entries -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-i18n="modal.title">Добавить запись в блог</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addEntryForm">
+                    <div class="form-group">
+                        <label for="entryTitle" data-i18n="modal.titleLabel">Заголовок:</label>
+                        <input type="text" id="entryTitle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="entryContent" data-i18n="modal.contentLabel">Содержание:</label>
+                        <textarea id="entryContent" rows="8" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="entryMood" data-i18n="modal.moodLabel">Настроение:</label>
+                        <select id="entryMood">
+                            <option value="happy" data-i18n="modal.mood.happy">Счастливый</option>
+                            <option value="productive" data-i18n="modal.mood.productive">Продуктивный</option>
+                            <option value="excited" data-i18n="modal.mood.excited">Взволнованный</option>
+                            <option value="neutral" data-i18n="modal.mood.neutral">Нейтральный</option>
+                            <option value="tired" data-i18n="modal.mood.tired">Уставший</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="entryPassword" data-i18n="modal.passwordLabel">Пароль администратора:</label>
+                        <input type="password" id="entryPassword" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" data-i18n="modal.submit">Добавить запись</button>
+                        <button type="button" class="btn btn-ghost" id="cancelModal" data-i18n="modal.cancel">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

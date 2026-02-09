@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Мебельный магазин",
+    "description": "Полнофункциональный интернет-магазин мебели с каталогом, корзиной и системой заказов. Реализована адаптивная верстка и анимации.",
+    "category": "web",
+    "tech": ["HTML", "CSS", "JavaScript", "Django", "PostgreSQL"],
+    "image": "/assets/images/projects/furniture-store.jpg",
+    "demo": "https://furniture-store.demo.com",
+    "github": "https://github.com/miraziz1off/furniture-store"
+  },
+  {
+    "id": 2,
+    "title": "Система учета сотрудников",
+    "description": "Веб-приложение для управления персоналом компании. Включает модули учета рабочего времени, расчета зарплаты и отчетности.",
+    "category": "system",
+    "tech": ["Python", "Django", "React", "PostgreSQL", "REST API"],
+    "image": "/assets/images/projects/employee-system.jpg",
+    "demo": null,
+    "github": "https://github.com/miraziz1off/employee-management"
+  },
+  {
+    "id": 3,
+    "title": "Telegram бот для ресторана",
+    "description": "Бот для автоматизации заказов в ресторане. Позволяет просматривать меню, делать заказы и отслеживать статус доставки.",
+    "category": "bot",
+    "tech": ["Python", "Telegram Bot API", "SQLite", "Aiogram"],
+    "image": "/assets/images/projects/restaurant-bot.jpg",
+    "demo": "https://t.me/restaurant_order_bot",
+    "github": "https://github.com/miraziz1off/restaurant-telegram-bot"
+  },
+  {
+    "id": 4,
+    "title": "Портфолио фотографа",
+    "description": "Современный сайт-портфолио для фотографа с интерактивной галереей, блогом и системой бронирования фотосессий.",
+    "category": "web",
+    "tech": ["HTML", "CSS", "JavaScript", "GSAP", "Netlify"],
+    "image": "/assets/images/projects/photographer-portfolio.jpg",
+    "demo": "https://photographer-portfolio.demo.com",
+    "github": "https://github.com/miraziz1off/photographer-portfolio"
+  },
+  {
+    "id": 5,
+    "title": "Погодный Telegram бот",
+    "description": "Бот для получения прогноза погоды в любом городе мира. Интеграция с OpenWeatherMap API и красивое оформление ответов.",
+    "category": "bot",
+    "tech": ["Python", "Telegram Bot API", "OpenWeatherMap API", "Redis"],
+    "image": "/assets/images/projects/weather-bot.jpg",
+    "demo": "https://t.me/weather_forecast_bot",
+    "github": "https://github.com/miraziz1off/weather-telegram-bot"
+  },
+  {
+    "id": 6,
+    "title": "Личный финансовый менеджер",
+    "description": "Приложение для учета личных финансов с аналитикой, категориями расходов и визуализацией в виде графиков и диаграмм.",
+    "category": "system",
+    "tech": ["React", "TypeScript", "Chart.js", "Node.js", "MongoDB"],
+    "image": "/assets/images/projects/finance-manager.jpg",
+    "demo": "https://finance-manager.demo.com",
+    "github": "https://github.com/miraziz1off/personal-finance-manager"
+  }
+]
