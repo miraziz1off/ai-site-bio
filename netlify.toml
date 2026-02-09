@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  functions = "functions"
+  functions = "ai-site-bio/netlify/functions"  # ← правильный путь
 
 [build.environment]
   NODE_VERSION = "18"
