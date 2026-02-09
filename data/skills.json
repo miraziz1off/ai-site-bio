@@ -7,8 +7,8 @@
       {"name": "HTML5", "level": 95},
       {"name": "CSS3", "level": 90},
       {"name": "JavaScript", "level": 85},
-      {"name": "TypeScript", "level": 70},
-      {"name": "React", "level": 80},
+      {"name": "TypeScript", "level": 50},
+      {"name": "React", "level": 50},
       {"name": "Tailwind CSS", "level": 85}
     ]
   },
@@ -18,10 +18,10 @@
     "icon": "fas fa-server",
     "skills": [
       {"name": "Python", "level": 90},
-      {"name": "Django", "level": 85},
-      {"name": "Java", "level": 75},
-      {"name": "C", "level": 70},
-      {"name": "REST API", "level": 80}
+      {"name": "Django", "level": 25},
+      {"name": "Java", "level": 35},
+      {"name": "C", "level": 20},
+      {"name": "REST API", "level": 20}
     ]
   },
   {
@@ -29,10 +29,10 @@
     "name": "Базы данных",
     "icon": "fas fa-database",
     "skills": [
-      {"name": "PostgreSQL", "level": 80},
+      {"name": "PostgreSQL", "level": 100},
       {"name": "SQL", "level": 85},
       {"name": "SQLite", "level": 90},
-      {"name": "MongoDB", "level": 65}
+      {"name": "MongoDB", "level": 5}
     ]
   },
   {
