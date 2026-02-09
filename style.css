@@ -2305,7 +2305,15 @@ a:hover {
     h1 {
         font-size: var(--text-4xl);
     }
-    
+    .scroll-indicator{
+        display: none;
+    }
+    .hero-stats{
+        padding-top: 30px;
+    }
+    .about-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
     h2 {
         font-size: var(--text-3xl);
     }
@@ -2360,7 +2368,10 @@ a:hover {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+    .about-text{
+        width: 400px;
+        text-align: start;
+    }
     .skills-container {
         grid-template-columns: 1fr;
     }
