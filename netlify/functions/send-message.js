@@ -1,30 +1,6 @@
 // Netlify Function для отправки анонимных сообщений в Telegram
-// ВАЖНО: Это менее безопасный вариант! Токен бота будет виден в коде на GitHub
-
-// ⚠️ УКАЖИТЕ ВАШИ ДАННЫЕ ЗДЕСЬ ⚠️
-const TELEGRAM_BOT_TOKEN = "8265541545:AAFmgWLl7U8VGIcAbafSxpVqlCWEE6ALwdQ"; // Например: "1234567890:ABCdefGHIjklMnopQRstUVwxYZ"
-const TELEGRAM_CHAT_ID = "8060654556"; // Например: "987654321"
-
-// ====================================================
-// КАК ПОЛУЧИТЬ ДАННЫЕ:
-// 
-// 1. ТОКЕН БОТА:
-//    - Откройте Telegram
-//    - Найдите @BotFather
-//    - Отправьте команду /newbot
-//    - Следуйте инструкциям
-//    - Сохраните полученный токен
-//
-// 2. CHAT ID:
-//    - Найдите @userinfobot в Telegram
-//    - Отправьте ему любое сообщение
-//    - Он покажет ваш Chat ID
-//    ИЛИ
-//    - Добавьте бота в группу/канал
-//    - Отправьте любое сообщение
-//    - Перейдите по ссылке: https://api.telegram.org/bot<ВАШ_ТОКЕН>/getUpdates
-//    - Найдите chat.id в ответе
-// ====================================================
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 exports.handler = async function(event, context) {
   // Проверяем метод запроса
@@ -39,22 +15,22 @@ exports.handler = async function(event, context) {
   }
   
   // Проверяем, указаны ли токен и chat_id
-  if (!TELEGRAM_BOT_TOKEN || TELEGRAM_BOT_TOKEN === "8265541545:AAFmgWLl7U8VGIcAbafSxpVqlCWEE6ALwdQ") {
+  if (!TELEGRAM_BOT_TOKEN) {
     return {
       statusCode: 500,
       body: JSON.stringify({ 
         error: 'Bot token not configured',
-        details: 'Please set TELEGRAM_BOT_TOKEN in the function code' 
+        details: 'Please set TELEGRAM_BOT_TOKEN environment variable in Netlify' 
       })
     };
   }
   
-  if (!TELEGRAM_CHAT_ID || TELEGRAM_CHAT_ID === "8060654556") {
+  if (!TELEGRAM_CHAT_ID) {
     return {
       statusCode: 500,
       body: JSON.stringify({ 
         error: 'Chat ID not configured',
-        details: 'Please set TELEGRAM_CHAT_ID in the function code' 
+        details: 'Please set TELEGRAM_CHAT_ID environment variable in Netlify' 
       })
     };
   }
