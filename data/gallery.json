@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
+    "alt": "Код разработчика на мониторе",
+    "thumbnail": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 2,
+    "url": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&auto=format&fit=crop",
+    "alt": "Ноутбук и кофе на рабочем столе",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 3,
+    "url": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&auto=format&fit=crop",
+    "alt": "Боксёрские перчатки",
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 4,
+    "url": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=800&auto=format&fit=crop",
+    "alt": "Теннисная ракетка и мячи",
+    "thumbnail": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 5,
+    "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
+    "alt": "Рабочее место с двумя мониторами",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 6,
+    "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&auto=format&fit=crop",
+    "alt": "HTML и CSS код на экране",
+    "thumbnail": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 7,
+    "url": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop",
+    "alt": "Python код на экране",
+    "thumbnail": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 8,
+    "url": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&auto=format&fit=crop",
+    "alt": "Встреча разработчиков",
+    "thumbnail": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=400&fit=crop&crop=center"
+  },
+  {
+    "id": 9,
+    "url": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=800&auto=format&fit=crop",
+    "alt": "Наушники и клавиатура",
+    "thumbnail": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=400&fit=crop&crop=center"
+  }
+]

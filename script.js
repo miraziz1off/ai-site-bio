@@ -386,6 +386,40 @@ function initializeNavigation() {
     
     // Update active link on scroll
     window.addEventListener('scroll', updateActiveNavLink);
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            
+            // Блокируем скролл тела при открытом меню
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Закрываем меню при клике на ссылку
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Закрываем меню при клике вне его
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 }
 
 function updateActiveNavLink() {
@@ -706,26 +740,58 @@ function recordMessageSent() {
 function initializeGallery() {
     if (!elements.galleryGrid) return;
     
-    // Generate gallery images (in a real app, these would come from a server)
-    const images = [];
-    for (let i = 1; i <= state.galleryImages; i++) {
-        images.push({
-            id: i,
-            url: `/assets/images/gallery/${i}.jpg`,
-            alt: `Изображение ${i}`,
-            thumbnail: `/assets/images/gallery/thumb-${i}.jpg`
+    // Загружаем галерею из JSON файла
+    fetch('/data/gallery.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Gallery JSON not found');
+            return response.json();
+        })
+        .then(images => {
+            console.log('Галерея загружена:', images.length, 'фото');
+            renderGallery(images);
+        })
+        .catch(error => {
+            console.warn('Ошибка загрузки галереи, используем заглушки:', error);
+            // Fallback - заглушки если файла нет
+            renderGallery(createFallbackGallery());
         });
-    }
     
-    renderGallery(images);
-    
-    // Load more button
+    // Кнопка "Показать больше"
     if (elements.loadMoreGalleryBtn) {
         elements.loadMoreGalleryBtn.addEventListener('click', () => {
-            state.galleryImages += 6;
-            initializeGallery();
+            showToast('Больше фотографий в следующих обновлениях!', 'info');
         });
     }
+}
+
+function createFallbackGallery() {
+    // Создаем массив заглушек если gallery.json не найден
+    return [
+        {
+            id: 1,
+            url: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&auto=format&fit=crop",
+            alt: "Код разработчика",
+            thumbnail: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=200&h=200&fit=crop"
+        },
+        {
+            id: 2,
+            url: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&auto=format&fit=crop",
+            alt: "Ноутбук и кофе",
+            thumbnail: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=200&h=200&fit=crop"
+        },
+        {
+            id: 3,
+            url: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&auto=format&fit=crop",
+            alt: "Боксёрские перчатки",
+            thumbnail: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=200&h=200&fit=crop"
+        },
+        {
+            id: 4,
+            url: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&auto=format&fit=crop",
+            alt: "Теннисная ракетка",
+            thumbnail: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=200&h=200&fit=crop"
+        }
+    ];
 }
 
 function renderGallery(images) {
