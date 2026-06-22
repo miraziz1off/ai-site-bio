@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="YEI_TQjLcflHey6saro2R8jqkVY4tE6_IaJQvHRXxgc" />
+  <!-- ═══════════════════════════════════════════
+       SEO & META
+  ═══════════════════════════════════════════ -->
+  <meta name="google-site-verification" content="YEI_TQjLcflHey6saro2R8jqkVY4tE6_IaJQvHRXxgc" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Муинов Миразиз | Разработчик & Дизайнер</title>
@@ -23,765 +26,2813 @@
     <meta name="twitter:title" content="Муинов Миразиз | Разработчик & Дизайнер">
     <meta name="twitter:description" content="Создаю красивые и функциональные веб-интерфейсы с любовью к сложным анимациям">
     <meta name="twitter:image" content="https://mmuinov.netlify.app/assets/images/avatar.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miraziz Muinov — Full Stack Developer</title>
+  <meta name="description" content="Miraziz Muinov — 15-year-old full stack developer from Uzbekistan building modern web apps, Telegram bots, and elegant interfaces. Python, Django, JavaScript, React." />
+  <meta name="keywords" content="Miraziz Muinov, mmuinov, full stack developer, frontend, backend, Python, Django, JavaScript, React, Telegram bots, Uzbekistan, web development" />
+  <meta name="author" content="Miraziz Muinov" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mmuinov.netlify.app" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Miraziz Muinov — Full Stack Developer" />
+  <meta property="og:description" content="15-year-old developer building the future of the web. Python, Django, React, and beyond." />
+  <meta property="og:image" content="https://mmuinov.netlify.app/assets/images/avatar.jpg" />
+  <meta property="og:url" content="https://mmuinov.netlify.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Miraziz Muinov — Full Stack Developer" />
+  <meta name="twitter:description" content="15-year-old developer building the future of the web." />
+  <meta name="twitter:image" content="https://mmuinov.netlify.app/assets/images/avatar.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miraziz Muinov",
+    "url": "https://mmuinov.netlify.app",
+    "sameAs": [
+      "https://github.com/miraziz1off",
+      "https://t.me/mmuinov",
+      "https://instagram.com/muinov770",
+      "https://reddit.com/user/MicterRobot",
+      "https://www.tiktok.com/@mu1nov"
+    ],
+    "jobTitle": "Full Stack Developer",
+    "address": { "@type": "PostalAddress", "addressCountry": "UZ" }
+  }
+  </script>
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0F19'/><text y='72' x='12' font-size='68' font-family='monospace' fill='%2300E5FF'>M</text></svg>" />
+
+  <!-- ═══════════════════════════════════════════
+       EXTERNAL CDN
+  ═══════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Vanilla Tilt -->
+  <script src="https://unpkg.com/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <!-- ═══════════════════════════════════════════
+       GLOBAL CSS
+  ═══════════════════════════════════════════ -->
+  <style>
+    /* ─── TOKENS ─── */
+    :root {
+      --bg-0: #050505;
+      --bg-1: #0B0F19;
+      --bg-2: #111827;
+      --bg-3: #1a2133;
+      --accent-cyan: #00E5FF;
+      --accent-violet: #7C3AED;
+      --accent-white: #FFFFFF;
+      --text-primary: #F9FAFB;
+      --text-secondary: #9CA3AF;
+      --text-muted: #4B5563;
+      --border: rgba(255,255,255,0.06);
+      --glass-bg: rgba(11,15,25,0.6);
+      --glass-border: rgba(0,229,255,0.08);
+      --glow-cyan: 0 0 40px rgba(0,229,255,0.18);
+      --glow-violet: 0 0 40px rgba(124,58,237,0.22);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --font-sans: 'Inter', sans-serif;
+      --font-display: 'Syne', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --transition: 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+
+    /* ─── RESET ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: auto; overflow-x: hidden; }
+    body {
+      background: var(--bg-0);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+    button { cursor: none; border: none; background: none; font-family: inherit; }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--bg-0); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 2px; }
+
+    /* ─── SCROLL PROGRESS ─── */
+    #scroll-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet));
+      z-index: 9999;
+      transition: width 0.1s linear;
+    }
+
+    /* ─── LOADING SCREEN ─── */
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-0);
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .loader-logo {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0;
+    }
+    .loader-bar-wrap {
+      width: min(320px, 80vw);
+      height: 2px;
+      background: var(--bg-2);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .loader-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet));
+      border-radius: 2px;
+    }
+    .loader-pct {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.2em;
+    }
+    .loader-tagline {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    /* ─── CUSTOM CURSOR ─── */
+    #cursor-dot, #cursor-ring {
+      position: fixed;
+      top: 0; left: 0;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s;
+    }
+    #cursor-dot {
+      width: 6px; height: 6px;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+    #cursor-ring {
+      width: 36px; height: 36px;
+      border: 1.5px solid rgba(0,229,255,0.5);
+      transition: width 0.3s, height 0.3s, border-color 0.3s;
+    }
+    body:has(a:hover) #cursor-ring,
+    body:has(button:hover) #cursor-ring {
+      width: 52px; height: 52px;
+      border-color: var(--accent-violet);
+    }
+
+    /* ─── NOISE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── CANVAS BG ─── */
+    #bg-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ─── NAVBAR ─── */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 clamp(1rem, 4vw, 3rem);
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(5,5,5,0);
+      border-bottom: 1px solid transparent;
+      transition: background 0.4s, border-color 0.4s;
+    }
+    #navbar.scrolled {
+      background: rgba(5,5,5,0.85);
+      border-color: var(--border);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+    }
+    .nav-links {
+      display: flex;
+      gap: clamp(1.2rem, 2.5vw, 2.5rem);
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: color var(--transition);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1.5px;
+      background: var(--accent-cyan);
+      transition: width var(--transition);
+    }
+    .nav-links a:hover { color: var(--accent-cyan); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      color: var(--bg-0) !important;
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-weight: 700 !important;
+      font-size: 0.78rem !important;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: opacity 0.3s, transform 0.3s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; transform: scale(1.04) !important; }
+    .nav-cta::after { display: none !important; }
+
+    /* Hamburger */
+    #hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      width: 28px;
+      cursor: none;
+      z-index: 1100;
+    }
+    #hamburger span {
+      display: block; height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+    #hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #hamburger.open span:nth-child(2) { opacity: 0; }
+    #hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    #mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: rgba(5,5,5,0.97);
+      backdrop-filter: blur(20px);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s;
+    }
+    #mobile-menu.open { opacity: 1; pointer-events: all; }
+    #mobile-menu a {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      transition: color 0.3s;
+    }
+    #mobile-menu a:hover { color: var(--accent-cyan); }
+
+    /* ─── HERO ─── */
+    #home {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding: 120px clamp(1rem, 6vw, 6rem) 60px;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .hero-content { max-width: 900px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,229,255,0.08);
+      border: 1px solid rgba(0,229,255,0.2);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      opacity: 0;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+    .hero-heading {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 7.5rem);
+      font-weight: 800;
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+    }
+    .hero-heading .line { display: block; overflow: hidden; }
+    .hero-heading .line-inner { display: block; transform: translateY(110%); }
+    .hero-name {
+      background: linear-gradient(135deg, var(--accent-white) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-name-accent {
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-typed-wrap {
+      font-family: var(--font-mono);
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: var(--accent-cyan);
+      margin-bottom: 1.8rem;
+      height: 2em;
+      opacity: 0;
+    }
+    .hero-typed-wrap .typed-cursor { color: var(--accent-violet); }
+    .hero-desc {
+      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      opacity: 0;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      opacity: 0;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      color: var(--bg-0);
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 12px 40px rgba(0,229,255,0.3); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+    .btn-ghost:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); box-shadow: var(--glow-cyan); }
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(2rem, 4vw, 4rem);
+      opacity: 0;
+    }
+    .stat-item { }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* Hero floating avatar */
+    .hero-avatar-wrap {
+      position: absolute;
+      right: clamp(2rem, 8vw, 10rem);
+      top: 50%;
+      transform: translateY(-50%);
+      width: clamp(180px, 22vw, 340px);
+      aspect-ratio: 1;
+      pointer-events: none;
+    }
+    .hero-avatar-glow {
+      position: absolute;
+      inset: -30%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,229,255,0.12) 0%, transparent 70%);
+      animation: float-glow 6s ease-in-out infinite;
+    }
+    .hero-avatar-ring {
+      position: absolute;
+      inset: -8%;
+      border-radius: 50%;
+      border: 1px solid rgba(0,229,255,0.15);
+      animation: spin-ring 20s linear infinite;
+    }
+    .hero-avatar-ring::before {
+      content: '';
+      position: absolute;
+      top: -3px; left: 50%;
+      width: 6px; height: 6px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--accent-cyan);
+      transform: translateX(-50%);
+    }
+    .hero-avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(0,229,255,0.2);
+      position: relative;
+      z-index: 1;
+      animation: float-avatar 6s ease-in-out infinite;
+    }
+    @keyframes float-avatar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+    @keyframes float-glow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    @keyframes spin-ring {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Scroll hint */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: clamp(1rem, 6vw, 6rem);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+    }
+    .scroll-hint-line {
+      width: 40px; height: 1px;
+      background: var(--text-muted);
+      position: relative;
+      overflow: hidden;
+    }
+    .scroll-hint-line::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--accent-cyan);
+      animation: line-sweep 2s ease-in-out infinite;
+    }
+    @keyframes line-sweep {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    .scroll-hint span {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* ─── SECTION SHARED ─── */
+    section {
+      position: relative;
+      z-index: 1;
+      padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 6vw, 6rem);
+    }
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: var(--accent-cyan);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+    .section-subtitle {
+      font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+    .section-header { margin-bottom: clamp(3rem, 5vw, 5rem); }
+
+    /* Glass card base */
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    /* ─── ABOUT ─── */
+    #about { background: linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 100%); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+    .about-copy p {
+      font-size: clamp(0.92rem, 1.5vw, 1.05rem);
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+    .about-copy p:last-of-type { margin-bottom: 2.5rem; }
+    .about-copy blockquote {
+      border-left: 2px solid var(--accent-cyan);
+      padding: 1rem 1.5rem;
+      background: rgba(0,229,255,0.04);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--accent-cyan);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+    }
+    .about-meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .about-meta-item {
+      padding: 1.2rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .about-meta-item:hover {
+      border-color: rgba(0,229,255,0.2);
+      background: rgba(0,229,255,0.04);
+    }
+    .meta-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .meta-value {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    /* Hobbies */
+    .hobby-tags {
+      display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem;
+    }
+    .hobby-tag {
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(124,58,237,0.12);
+      border: 1px solid rgba(124,58,237,0.25);
+      color: #a78bfa;
+    }
+
+    /* Code snippet on the right */
+    .about-code-wrap {
+      position: sticky;
+      top: 100px;
+    }
+    .code-window {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--glow-violet);
+    }
+    .code-titlebar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 20px;
+      background: var(--bg-2);
+      border-bottom: 1px solid var(--border);
+    }
+    .code-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .code-dot.r { background: #FF5F57; }
+    .code-dot.y { background: #FFBD2E; }
+    .code-dot.g { background: #28CA41; }
+    .code-filename {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-left: 8px;
+    }
+    .code-body {
+      padding: 24px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.72rem, 1.2vw, 0.82rem);
+      line-height: 1.8;
+      color: #e2e8f0;
+    }
+    .code-comment { color: #4a5568; }
+    .code-keyword { color: #a78bfa; }
+    .code-string { color: #68d391; }
+    .code-variable { color: #63b3ed; }
+    .code-value { color: #fbbf24; }
+    .code-num { color: #f6ad55; }
+    .code-fn { color: var(--accent-cyan); }
+
+    /* ─── TIMELINE ─── */
+    #journey { background: var(--bg-1); }
+    .timeline {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(180deg, var(--accent-cyan), var(--accent-violet), transparent);
+    }
+    .timeline-item {
+      display: flex;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .timeline-dot-wrap {
+      flex-shrink: 0;
+      width: 48px;
+      display: flex;
+      justify-content: center;
+    }
+    .timeline-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      border: 2px solid var(--bg-1);
+      box-shadow: 0 0 16px rgba(0,229,255,0.6);
+      margin-top: 6px;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .timeline-item:hover .timeline-dot { transform: scale(1.5); }
+    .timeline-content {
+      flex: 1;
+      padding: 1.5rem 2rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .timeline-item:hover .timeline-content {
+      border-color: rgba(0,229,255,0.2);
+      box-shadow: var(--glow-cyan);
+    }
+    .timeline-year {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ─── SKILLS ─── */
+    #skills { background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+    .skill-card {
+      padding: 2rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      transform-style: preserve-3d;
+    }
+    .skill-card:hover {
+      border-color: rgba(0,229,255,0.25);
+      box-shadow: var(--glow-cyan);
+    }
+    .skill-cat-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      border: 1px solid;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .skill-tag:hover { transform: translateY(-2px); }
+    .skill-tag.cyan { color: var(--accent-cyan); background: rgba(0,229,255,0.06); border-color: rgba(0,229,255,0.2); }
+    .skill-tag.violet { color: #a78bfa; background: rgba(124,58,237,0.06); border-color: rgba(124,58,237,0.2); }
+    .skill-tag.green { color: #34d399; background: rgba(52,211,153,0.06); border-color: rgba(52,211,153,0.2); }
+    .skill-tag.amber { color: #fbbf24; background: rgba(251,191,36,0.06); border-color: rgba(251,191,36,0.2); }
+    .skill-tag i { font-size: 0.85em; }
+
+    /* Qualities */
+    .qualities-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .quality-item {
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.015);
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .quality-item:hover { border-color: rgba(124,58,237,0.3); transform: translateY(-4px); }
+    .quality-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+    .quality-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* ─── PROJECTS ─── */
+    #projects { background: var(--bg-0); }
+    .project-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 3rem;
+    }
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      background: transparent;
+      transition: all 0.3s;
+      cursor: none;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(0,229,255,0.06);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      cursor: none;
+    }
+    .project-card:hover {
+      border-color: rgba(0,229,255,0.25);
+      transform: translateY(-6px);
+      box-shadow: var(--glow-cyan);
+    }
+    .project-card-header {
+      padding: 2rem 2rem 1rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .project-icon-wrap {
+      width: 52px; height: 52px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .project-links { display: flex; gap: 8px; }
+    .project-link-btn {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      transition: all 0.3s;
+    }
+    .project-link-btn:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(0,229,255,0.06);
+    }
+    .project-card-body { padding: 0 2rem 2rem; }
+    .project-category {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+    }
+    .project-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .project-tech-tags {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .project-tech {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.04);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    /* GitHub section */
+    .github-cta {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 3rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+    }
+    .github-cta p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--bg-1); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      padding: 2.5rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet));
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-card:hover {
+      border-color: rgba(0,229,255,0.15);
+      transform: translateY(-4px);
+      box-shadow: var(--glow-cyan);
+    }
+    .service-num {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      margin-bottom: 1.2rem;
+    }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+    }
+    .service-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    .service-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* ─── ACHIEVEMENTS ─── */
+    #achievements { background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%); }
+    .achieve-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+    .achieve-card {
+      padding: 2.5rem 2rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      transition: all 0.4s;
+    }
+    .achieve-card:hover {
+      border-color: rgba(0,229,255,0.25);
+      transform: translateY(-4px);
+      box-shadow: var(--glow-cyan);
+    }
+    .achieve-emoji { font-size: 2.5rem; margin-bottom: 1rem; }
+    .achieve-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .achieve-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ─── BLOG ─── */
+    #blog { background: var(--bg-0); }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+    .blog-card {
+      padding: 2rem;
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: all 0.3s;
+      cursor: none;
+    }
+    .blog-card:hover {
+      border-color: rgba(0,229,255,0.2);
+      transform: translateY(-4px);
+      box-shadow: var(--glow-cyan);
+    }
+    .blog-cat {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 1rem;
+    }
+    .blog-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.8rem;
+    }
+    .blog-excerpt {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--bg-1); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+    .contact-copy h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+    .contact-copy p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+    .social-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .social-card {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.2rem 1.5rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all 0.3s;
+      color: var(--text-primary);
+    }
+    .social-card:hover {
+      border-color: rgba(0,229,255,0.25);
+      background: rgba(0,229,255,0.04);
+      transform: translateX(4px);
+    }
+    .social-card-icon {
+      width: 40px; height: 40px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .social-card-info { flex: 1; }
+    .social-card-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 2px;
+    }
+    .social-card-handle {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .social-card-arrow {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-card:hover .social-card-arrow {
+      transform: translateX(4px);
+      color: var(--accent-cyan);
+    }
+
+    /* Contact form */
+    .contact-form {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 3rem);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      resize: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px rgba(0,229,255,0.08);
+    }
+    .form-group textarea { min-height: 130px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--bg-0);
+      border-top: 1px solid var(--border);
+      padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 6vw, 6rem) 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      margin-bottom: 4rem;
+    }
+    .footer-brand .nav-logo { font-size: 1.6rem; display: inline-block; margin-bottom: 1rem; }
+    .footer-brand p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; max-width: 280px; margin-bottom: 1.5rem; }
+    .footer-socials { display: flex; gap: 0.6rem; }
+    .footer-social-btn {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      transition: all 0.3s;
+    }
+    .footer-social-btn:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(0,229,255,0.06);
+      transform: translateY(-2px);
+    }
+    .footer-col h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 1.2rem;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul li a {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      transition: color 0.3s;
+    }
+    .footer-col ul li a:hover { color: var(--accent-cyan); }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer-bottom p {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .footer-made {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-made span.heart { color: #e11d48; animation: heartbeat 1.4s ease-in-out infinite; }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+
+    /* ─── PROJECT MODAL ─── */
+    #project-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s;
+    }
+    #project-modal.open { opacity: 1; pointer-events: all; }
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(5,5,5,0.85);
+      backdrop-filter: blur(12px);
+    }
+    .modal-box {
+      position: relative;
+      z-index: 1;
+      background: var(--bg-1);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      transform: scale(0.94) translateY(20px);
+      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+      scrollbar-width: thin;
+    }
+    #project-modal.open .modal-box { transform: scale(1) translateY(0); }
+    .modal-close {
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 1rem;
+      transition: all 0.3s;
+      cursor: none;
+    }
+    .modal-close:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+    .modal-cat {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+    .modal-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+    }
+    .modal-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .modal-tech-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem; }
+    .modal-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    /* ─── FLOATING PARTICLES CANVAS ─── */
+    #particles-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.35;
+    }
+
+    /* ─── GLOW ORBS ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(80px);
+      opacity: 0.12;
+      z-index: 0;
+    }
+    .orb-1 {
+      width: 600px; height: 600px;
+      background: var(--accent-cyan);
+      top: -200px; right: -200px;
+    }
+    .orb-2 {
+      width: 500px; height: 500px;
+      background: var(--accent-violet);
+      bottom: 10%; left: -150px;
+    }
+
+    /* ─── AVAILABILITY BADGE ─── */
+    .avail-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(52,211,153,0.08);
+      border: 1px solid rgba(52,211,153,0.25);
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: #34d399;
+      letter-spacing: 0.1em;
+      margin-top: 2rem;
+      display: inline-flex;
+    }
+    .avail-dot {
+      width: 7px; height: 7px;
+      background: #34d399;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-avatar-wrap { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-code-wrap { position: static; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      #hamburger { display: flex; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero-stats { gap: 1.5rem; }
+      .about-meta-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── UTILS ─── */
+    .text-gradient {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hidden { display: none !important; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  </style>
 </head>
-<!-- Добавь ПЕРЕД закрывающим </head> -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8KV7G5SXE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y8KV7G5SXE');
-</script>
-
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-container">
-            <div class="loading-text">
-                <span class="letter" style="--i:1">L</span>
-                <span class="letter" style="--i:2">O</span>
-                <span class="letter" style="--i:3">A</span>
-                <span class="letter" style="--i:4">D</span>
-                <span class="letter" style="--i:5">I</span>
-                <span class="letter" style="--i:6">N</span>
-                <span class="letter" style="--i:7">G</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
+
+  <!-- ═══════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-tagline" id="loader-tagline">INITIALIZING</div>
+    <div class="loader-logo" id="loader-logo">M.</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loader-bar"></div>
     </div>
+    <div class="loader-pct" id="loader-pct">0%</div>
+  </div>
 
-    <!-- Floating particles background -->
-    <div class="particles" id="particles"></div>
+  <!-- ═══════════════════════════════════════════
+       GLOBAL UI
+  ═══════════════════════════════════════════ -->
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
 
-    <!-- Language switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="ru">RU</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-text">Miraziz</span>
-                <span class="logo-dot">.</span>
-            </a>
-            
-            <div class="nav-links">
-                <a href="#home" class="nav-link active" data-i18n="nav.home">Главная</a>
-                <a href="#about" class="nav-link" data-i18n="nav.about">Обо мне</a>
-                <a href="#projects" class="nav-link" data-i18n="nav.projects">Проекты</a>
-                <a href="#skills" class="nav-link" data-i18n="nav.skills">Навыки</a>
-                <a href="#life" class="nav-link" data-i18n="nav.life">Жизнь</a>
-                <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
-                <a href="#message" class="nav-link message-link" data-i18n="nav.message">Анонимное сообщение</a>
-            </div>
-            
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Main content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <span class="badge-text" data-i18n="hero.badge">15 лет • Разработчик</span>
-                        <div class="badge-glow"></div>
-                    </div>
-                    
-                    <h1 class="hero-title">
-                        <span class="title-line">
-                            <span class="title-word" data-i18n="hero.title1">Привет, я</span>
-                            <span class="title-name">Миразиз</span>
-                        </span>
-                        <span class="title-line">
-                            <span class="title-typed" id="typed-text"></span>
-                            <span class="typed-cursor">|</span>
-                        </span>
-                    </h1>
-                    
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">
-                        Создаю красивые и функциональные веб-интерфейсы с любовью к сложным анимациям и нестандартным решениям. Занимаюсь боксом, играю в теннис и постоянно развиваюсь.
-                    </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary" data-i18n="hero.projectsBtn">Смотреть проекты</a>
-                        <a href="#contact" class="btn btn-outline" data-i18n="hero.contactBtn">Связаться</a>
-                        <a href="#message" class="btn btn-ghost" data-i18n="hero.messageBtn">Анонимное сообщение</a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number" id="projectCount">12+</span>
-                            <span class="stat-label" data-i18n="hero.projects">Проектов</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" id="experience">3</span>
-                            <span class="stat-label" data-i18n="hero.experience">Года опыта</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" id="skillsCount">15+</span>
-                            <span class="stat-label" data-i18n="hero.skills">Навыков</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-visual">
-                    <div class="avatar-container">
-                        <div class="avatar-frame">
-                            <div class="avatar-image" id="avatar"><img class="avatar-image-2" src="./image.png" alt=""></div>
-                            <div class="avatar-glow"></div>
-                            <div class="avatar-decoration">
-                                <div class="decoration-item"></div>
-                                <div class="decoration-item"></div>
-                                <div class="decoration-item"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="floating-elements">
-                        <div class="float-element" style="--delay:0; --x:10; --y:20;">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="float-element" style="--delay:1; --x:-15; --y:10;">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="float-element" style="--delay:2; --x:20; --y:-10;">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="float-element" style="--delay:3; --x:-10; --y:-20;">
-                            <i class="fas fa-database"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <div class="arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="about.title">Обо мне</h2>
-                    <p class="section-subtitle" data-i18n="about.subtitle">Молодой, амбициозный и постоянно развивающийся</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3 data-i18n="about.heading">Муинов Миразиз</h3>
-                        <p data-i18n="about.description1">
-                            В 15 лет я уже активно занимаюсь веб-разработкой, создавая как фронтенд, так и бэкенд приложений. Моя страсть — превращать сложные идеи в элегантные и интуитивно понятные интерфейсы.
-                        </p>
-                        <p data-i18n="about.description2">
-                            Помимо программирования, я занимаюсь боксом, что помогает развивать дисциплину и выносливость, и играю в теннис для поддержания концентрации и стратегического мышления. Эти качества помогают мне в разработке — находить нестандартные решения и доводить проекты до идеала.
-                        </p>
-                        <p data-i18n="about.description3">
-                            Я открыт для сотрудничества, интересных проектов и всегда рад новым знакомствам в IT-сфере. Строю личный бренд и стремлюсь выделяться среди других разработчиков своим уникальным подходом и вниманием к деталям.
-                        </p>
-                        
-                        <div class="about-quote">
-                            <i class="fas fa-quote-left"></i>
-                            <p data-i18n="about.quote">Код — это поэзия, написанная для машин, но понятная людям</p>
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <div class="about-quote">
-                            <i class="fas fa-quote-left"></i>
-                            <p data-i18n="about.quote">Умный в гору не пойдёт, а я тем более. xD</p>
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="about-info">
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4 data-i18n="about.info.age">Возраст</h4>
-                                <p>15 лет</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4 data-i18n="about.info.location">Местоположение</h4>
-                                <p data-i18n="about.info.locationText">Узбекистан</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4 data-i18n="about.info.education">Образование</h4>
-                                <p data-i18n="about.info.educationText">Самообразование + курсы</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4 data-i18n="about.info.status">Статус</h4>
-                                <p data-i18n="about.info.statusText">Фрилансер / Ищу проекты</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card hobbies">
-                            <div class="info-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4 data-i18n="about.info.hobbies">Хобби</h4>
-                                <div class="hobbies-list">
-                                    <span class="hobby-tag" data-i18n="about.hobby1">Бокс</span>
-                                    <span class="hobby-tag" data-i18n="about.hobby2">Теннис</span>
-                                    <span class="hobby-tag" data-i18n="about.hobby3">Дизайн</span>
-                                    <span class="hobby-tag" data-i18n="about.hobby4">Фотография</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline">
-                    <h3 class="timeline-title" data-i18n="about.timeline">Мой путь</h3>
-                    <div class="timeline-container">
-                        <div class="timeline-line"></div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2023</div>
-                            <div class="timeline-content">
-                                <h4 data-i18n="about.timeline1.title">Первые шаги в программировании</h4>
-                                <p data-i18n="about.timeline1.desc">Изучение основ Frontend и создание первых простых сайтов</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2024</div>
-                            <div class="timeline-content">
-                                <h4 data-i18n="about.timeline2.title">Погружение в веб-разработку</h4>
-                                <p data-i18n="about.timeline2.desc">Изучение HTML, CSS, JavaScript и создание первых веб-сайтов</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2025</div>
-                            <div class="timeline-content">
-                                <h4 data-i18n="about.timeline3.title">Бэкенд и фреймворки</h4>
-                                <p data-i18n="about.timeline3.desc">Освоение Django, React, работа с базами данных и API</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2026</div>
-                            <div class="timeline-content">
-                                <h4 data-i18n="about.timeline4.title">Коммерческие проекты</h4>
-                                <p data-i18n="about.timeline4.desc">Разработка сайтов для бизнеса, Telegram-ботов и систем учета</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="projects.title">Проекты</h2>
-                    <p class="section-subtitle" data-i18n="projects.subtitle">Мои работы, от простых сайтов до сложных систем</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="projects-filter">
-                    <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Все</button>
-                    <button class="filter-btn" data-filter="web" data-i18n="projects.filter.web">Веб-сайты</button>
-                    <button class="filter-btn" data-filter="system" data-i18n="projects.filter.system">Системы</button>
-                    <button class="filter-btn" data-filter="bot" data-i18n="projects.filter.bot">Telegram-боты</button>
-                </div>
-                
-                <div class="projects-grid" id="projectsGrid">
-                    <!-- Projects will be loaded from JSON -->
-                </div>
-                
-                <div class="github-stats">
-                    <div class="github-card">
-                        <i class="fab fa-github"></i>
-                        <h3 data-i18n="projects.github">Больше проектов на GitHub</h3>
-                        <a href="https://github.com/miraziz1off" target="_blank" class="github-link">
-                            github.com/miraziz1off
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <div class="github-stats-info">
-                            <div class="github-stat">
-                                <i class="fas fa-code-branch"></i>
-                                <span id="repoCount">24</span>
-                                <span data-i18n="projects.repos">репозиториев</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="skills.title">Навыки & Технологии</h2>
-                    <p class="section-subtitle" data-i18n="skills.subtitle">Инструменты и технологии, которые я использую</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="skills-container">
-                    <!-- Skills will be loaded from JSON -->
-                </div>
-                
-                <div class="skills-visual">
-                    <div class="code-editor">
-                        <div class="editor-header">
-                            <div class="editor-dots">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                            </div>
-                            <div class="editor-title">skills.js</div>
-                        </div>
-                        <div class="editor-content">
-                            <pre><code class="javascript">
-// Мой стек технологий
-const techStack = {
-  frontend: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React"],
-  backend: ["Python", "Django", "Java", "C"],
-  databases: ["PostgreSQL", "SQL"],
-  tools: ["Git", "Tailwind", "Telegram Bot API"],
-  design: ["Figma", "Adobe XD", "UI/UX Principles"]
-};
-
-// Мои качества как разработчика
-const developerQualities = [
-  "Внимание к деталям",
-  "Страсть к анимациям",
-  "Любовь к чистому коду",
-  "Постоянное обучение",
-  "Командная работа"
-];
-
-console.log("Всегда готов к новым вызовам!");</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Life / Journal Section -->
-        <section id="life" class="life">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="life.title">Жизнь & Блог</h2>
-                    <p class="section-subtitle" data-i18n="life.subtitle">Мысли, достижения и моменты из жизни</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="life-entries" id="lifeEntries">
-                    <!-- Blog entries will be loaded from JSON -->
-                </div>
-                
-                <div class="life-actions">
-                    <button class="btn btn-outline" id="loadMoreEntries" data-i18n="life.loadMore">Загрузить больше</button>
-                    <button class="btn btn-ghost" id="addEntryBtn" data-i18n="life.addEntry">+ Добавить запись (админ)</button>
-                </div>
-                
-                <div class="mood-tracker">
-                    <h3 data-i18n="life.mood">Настроение за последнюю неделю</h3>
-                    <div class="mood-chart">
-                        <div class="mood-day" data-day="Пн" data-mood="happy"></div>
-                        <div class="mood-day" data-day="Вт" data-mood="neutral"></div>
-                        <div class="mood-day" data-day="Ср" data-mood="excited"></div>
-                        <div class="mood-day" data-day="Чт" data-mood="productive"></div>
-                        <div class="mood-day" data-day="Пт" data-mood="happy"></div>
-                        <div class="mood-day" data-day="Сб" data-mood="relaxed"></div>
-                        <div class="mood-day" data-day="Вс" data-mood="tired"></div>
-                    </div>
-                    <div class="mood-legend">
-                        <div class="legend-item">
-                            <span class="mood-icon happy"></span>
-                            <span data-i18n="life.mood.happy">Счастливый</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="mood-icon productive"></span>
-                            <span data-i18n="life.mood.productive">Продуктивный</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="mood-icon relaxed"></span>
-                            <span data-i18n="life.mood.relaxed">Расслабленный</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="mood-icon tired"></span>
-                            <span data-i18n="life.mood.tired">Уставший</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Anonymous Message Section -->
-        <section id="message" class="message">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="message.title">Анонимное сообщение</h2>
-                    <p class="section-subtitle" data-i18n="message.subtitle">Отправьте мне сообщение без указания имени</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="message-container">
-                    <div class="message-info">
-                        <div class="info-icon">
-                            <i class="fas fa-user-secret"></i>
-                        </div>
-                        <h3 data-i18n="message.info.title">Полная анонимность</h3>
-                        <p data-i18n="message.info.desc">
-                            Ваше сообщение будет отправлено напрямую мне в Telegram через защищенное соединение. Никакие данные об отправителе не сохраняются.
-                        </p>
-                        <ul class="message-features">
-                            <li data-i18n="message.feature1">Без регистрации</li>
-                            <li data-i18n="message.feature2">Без сохранения данных</li>
-                            <li data-i18n="message.feature3">Без отслеживания</li>
-                            <li data-i18n="message.feature4">Защита от спама</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="message-form-container">
-                        <form id="anonymousMessageForm">
-                            <div class="form-group">
-                                <label for="messageText" data-i18n="message.form.label">Ваше сообщение:</label>
-                                <textarea 
-                                    id="messageText" 
-                                    name="message" 
-                                    rows="6" 
-                                    placeholder="Напишите что-нибудь... Совет, вопрос, отзыв или просто приветствие!"
-                                    data-i18n-placeholder="message.form.placeholder"
-                                    required
-                                    minlength="10"
-                                    maxlength="1000"></textarea>
-                                <div class="char-counter">
-                                    <span id="charCount">0</span>/1000
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label data-i18n="message.form.mood">Настроение сообщения:</label>
-                                <div class="mood-selector">
-                                    <input type="radio" name="mood" id="mood-neutral" value="neutral" checked>
-                                    <label for="mood-neutral" class="mood-option">
-                                        <i class="far fa-smile"></i>
-                                        <span data-i18n="message.mood.neutral">Нейтральное</span>
-                                    </label>
-                                    
-                                    <input type="radio" name="mood" id="mood-positive" value="positive">
-                                    <label for="mood-positive" class="mood-option">
-                                        <i class="far fa-laugh"></i>
-                                        <span data-i18n="message.mood.positive">Позитивное</span>
-                                    </label>
-                                    
-                                    <input type="radio" name="mood" id="mood-question" value="question">
-                                    <label for="mood-question" class="mood-option">
-                                        <i class="far fa-question-circle"></i>
-                                        <span data-i18n="message.mood.question">Вопрос</span>
-                                    </label>
-                                    
-                                    <input type="radio" name="mood" id="mood-feedback" value="feedback">
-                                    <label for="mood-feedback" class="mood-option">
-                                        <i class="far fa-comment-dots"></i>
-                                        <span data-i18n="message.mood.feedback">Отзыв</span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <div class="captcha-container">
-                                    <div class="captcha-question" data-i18n="message.captcha.question">Сколько будет 7 + 3?</div>
-                                    <input type="text" id="captchaAnswer" placeholder="10" data-i18n-placeholder="message.captcha.placeholder" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary" id="sendMessageBtn" data-i18n="message.form.submit">
-                                    Отправить анонимно
-                                </button>
-                                <button type="button" class="btn btn-ghost" id="clearFormBtn" data-i18n="message.form.clear">
-                                    Очистить
-                                </button>
-                            </div>
-                            
-                            <div class="form-notice">
-                                <i class="fas fa-info-circle"></i>
-                                <span data-i18n="message.notice">Защита от спама: максимум 3 сообщения в час с одного устройства</span>
-                            </div>
-                        </form>
-                        
-                        <div class="message-status" id="messageStatus">
-                            <div class="status-icon">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                            <p data-i18n="message.ready">Готово к отправке</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="contact.title">Контакты</h2>
-                    <p class="section-subtitle" data-i18n="contact.subtitle">Свяжитесь со мной любым удобным способом</p>
-                    <div class="section-line"></div>
-                </div>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/miraziz1off" target="_blank">github.com/miraziz1off</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <a href="mailto:miraziz1off@gmail.com">miraziz1off@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-telegram"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Telegram</h4>
-                                <a href="https://t.me/mmuinov" target="_blank">@mmuinov</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Instagram</h4>
-                                <a href="https://instagram.com/muinov770" target="_blank">@muinov770</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-reddit"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Reddit</h4>
-                                <a href="https://reddit.com/user/MicterRobot" target="_blank">u/MicterRobot</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-tiktok"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>TikTok</h4>
-                                <a href="http://www.tiktok.com/mu1nov" target="_blank">@mu1nov</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-gallery">
-                        <h3 data-i18n="contact.gallery">Галерея</h3>
-                        <div class="gallery-grid" id="galleryGrid">
-                            <!-- Gallery images will be loaded dynamically -->
-                        </div>
-                        <button class="btn btn-outline" id="loadMoreGallery" data-i18n="contact.loadMore">Показать больше</button>
-                    </div>
-                </div>
-                
-                <div class="contact-cta">
-                    <h3 data-i18n="contact.cta">Есть проект или идея?</h3>
-                    <p data-i18n="contact.ctaDesc">Обсудим и создадим что-то удивительное вместе!</p>
-                    <a href="#message" class="btn btn-primary" data-i18n="contact.ctaBtn">Начать разговор</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#" class="logo">
-                        <span class="logo-text">Miraziz</span>
-                        <span class="logo-dot">.</span>
-                    </a>
-                    <p class="footer-description" data-i18n="footer.description">
-                        15-летний разработчик, создающий будущее веба
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://github.com/miraziz1off" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://t.me/mmuinov" target="_blank" aria-label="Telegram">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://instagram.com/muinov770" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="mailto:miraziz1off@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 data-i18n="footer.links">Ссылки</h4>
-                        <a href="#home" data-i18n="footer.home">Главная</a>
-                        <a href="#about" data-i18n="footer.about">Обо мне</a>
-                        <a href="#projects" data-i18n="footer.projects">Проекты</a>
-                        <a href="#skills" data-i18n="footer.skills">Навыки</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4 data-i18n="footer.more">Дополнительно</h4>
-                        <a href="#life" data-i18n="footer.life">Жизнь</a>
-                        <a href="#message" data-i18n="footer.message">Анонимное сообщение</a>
-                        <a href="#contact" data-i18n="footer.contact">Контакты</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4 data-i18n="footer.legal">Правовая информация</h4>
-                        <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
-                        <a href="#" data-i18n="footer.terms">Условия использования</a>
-                        <a href="#" data-i18n="footer.cookies">Cookies</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p data-i18n="footer.copyright">&copy; 2026 Муинов Миразиз. Все права защищены. <br> Разработка и дизайн сайта выполнены автором. Копирование материалов без согласия правообладателя запрещено.</p>
-                <p class="footer-tech">
-                    <span data-i18n="footer.madeWith">Сделано с</span>
-                    <i class="fas fa-heart"></i>
-                    <span data-i18n="footer.and">и</span>
-                    <i class="fas fa-code"></i>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Admin modal for adding blog entries -->
-    <div class="modal" id="adminModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 data-i18n="modal.title">Добавить запись в блог</h3>
-                <button class="modal-close" id="closeModal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <form id="addEntryForm">
-                    <div class="form-group">
-                        <label for="entryTitle" data-i18n="modal.titleLabel">Заголовок:</label>
-                        <input type="text" id="entryTitle" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="entryContent" data-i18n="modal.contentLabel">Содержание:</label>
-                        <textarea id="entryContent" rows="8" required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="entryMood" data-i18n="modal.moodLabel">Настроение:</label>
-                        <select id="entryMood">
-                            <option value="happy" data-i18n="modal.mood.happy">Счастливый</option>
-                            <option value="productive" data-i18n="modal.mood.productive">Продуктивный</option>
-                            <option value="excited" data-i18n="modal.mood.excited">Взволнованный</option>
-                            <option value="neutral" data-i18n="modal.mood.neutral">Нейтральный</option>
-                            <option value="tired" data-i18n="modal.mood.tired">Уставший</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="entryPassword" data-i18n="modal.passwordLabel">Пароль администратора:</label>
-                        <input type="password" id="entryPassword" required>
-                    </div>
-                    
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary" data-i18n="modal.submit">Добавить запись</button>
-                        <button type="button" class="btn btn-ghost" id="cancelModal" data-i18n="modal.cancel">Отмена</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Back to top button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo">Miraziz.</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
     </button>
+  </nav>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#about" class="mm-link">About</a>
+    <a href="#journey" class="mm-link">Journey</a>
+    <a href="#skills" class="mm-link">Skills</a>
+    <a href="#projects" class="mm-link">Projects</a>
+    <a href="#services" class="mm-link">Services</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="dot"></span>
+        Available for Projects
+      </div>
+
+      <h1 class="hero-heading" id="hero-heading" aria-label="Hi, I'm Miraziz">
+        <span class="line"><span class="line-inner">Hi, I'm</span></span>
+        <span class="line"><span class="line-inner hero-name">Miraziz</span></span>
+        <span class="line"><span class="line-inner hero-name-accent">Muinov.</span></span>
+      </h1>
+
+      <div class="hero-typed-wrap" id="hero-typed-wrap">
+        <span id="hero-typed"></span>
+      </div>
+
+      <p class="hero-desc" id="hero-desc">
+        15-year-old Full Stack Developer from Uzbekistan crafting modern web experiences, 
+        Telegram bots, and complex systems — with an obsession for clean code and 
+        stunning animations.
+      </p>
+
+      <div class="hero-actions" id="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-arrow-right"></i> View Work
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </a>
+        <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="btn-ghost">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-count="12">0</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="3">0</div>
+          <div class="stat-label">Years Coding</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="15">0</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="24">0</div>
+          <div class="stat-label">GitHub Repos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating avatar -->
+    <div class="hero-avatar-wrap" id="hero-avatar">
+      <div class="hero-avatar-glow"></div>
+      <div class="hero-avatar-ring"></div>
+      <img
+        src="https://mmuinov.netlify.app/image2.png"
+        alt="Miraziz Muinov"
+        class="hero-avatar-img"
+        loading="eager"
+        onerror="this.style.background='linear-gradient(135deg,#00E5FF22,#7C3AED22)';this.src=''"
+      />
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scroll-hint">
+      <div class="scroll-hint-line"></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">About Me</div>
+      <h2 class="section-title">Young, ambitious,<br>and relentlessly building.</h2>
+    </div>
+
+    <div class="about-grid">
+      <!-- Copy side -->
+      <div class="about-copy" data-aos="fade-right">
+        <p>
+          At 15, I'm already deep into full stack web development — building frontends 
+          that feel alive, backends that scale, and Telegram bots that actually delight users. 
+          Based in Uzbekistan, self-taught through courses and sheer determination.
+        </p>
+        <p>
+          My passion is turning complex ideas into elegant, intuitive interfaces. 
+          I'm obsessed with animation, performance, and that feeling when a product 
+          just <em>clicks</em> for its users.
+        </p>
+        <p>
+          Outside of code: I box (discipline and resilience), play tennis 
+          (concentration and strategy), design in Figma, and occasionally pick up a camera. 
+          These pursuits feed directly into how I approach engineering problems — 
+          with patience, precision, and a drive to go further.
+        </p>
+        <blockquote>
+          "Code is poetry written for machines, understood by humans."
+        </blockquote>
+
+        <div class="about-meta-grid">
+          <div class="about-meta-item">
+            <div class="meta-label">Age</div>
+            <div class="meta-value">15 years old</div>
+          </div>
+          <div class="about-meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Uzbekistan 🇺🇿</div>
+          </div>
+          <div class="about-meta-item">
+            <div class="meta-label">Education</div>
+            <div class="meta-value">Self-taught + Courses</div>
+          </div>
+          <div class="about-meta-item">
+            <div class="meta-label">Status</div>
+            <div class="meta-value">Freelancer · Open to work</div>
+          </div>
+          <div class="about-meta-item" style="grid-column: span 2;">
+            <div class="meta-label">Hobbies</div>
+            <div class="hobby-tags" style="margin-top:0.5rem;">
+              <span class="hobby-tag">🥊 Boxing</span>
+              <span class="hobby-tag">🎾 Tennis</span>
+              <span class="hobby-tag">🎨 Design</span>
+              <span class="hobby-tag">📷 Photography</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Open to freelance · internship · collaboration
+        </div>
+      </div>
+
+      <!-- Code window side -->
+      <div class="about-code-wrap" data-aos="fade-left">
+        <div class="code-window" data-tilt data-tilt-max="6" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.08">
+          <div class="code-titlebar">
+            <span class="code-dot r"></span>
+            <span class="code-dot y"></span>
+            <span class="code-dot g"></span>
+            <span class="code-filename">miraziz.profile.js</span>
+          </div>
+          <div class="code-body">
+<span class="code-comment">// ─── Developer Profile ───────────────────</span>
+<br>
+<span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+<br>&nbsp;&nbsp;<span class="code-variable">name</span>: <span class="code-string">"Miraziz Muinov"</span>,
+<br>&nbsp;&nbsp;<span class="code-variable">age</span>: <span class="code-num">15</span>,
+<br>&nbsp;&nbsp;<span class="code-variable">location</span>: <span class="code-string">"Uzbekistan 🇺🇿"</span>,
+<br>&nbsp;&nbsp;<span class="code-variable">stack</span>: {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">frontend</span>: [<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"React"</span>],
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">backend</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"Django"</span>, <span class="code-string">"Java"</span>],
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">db</span>: [<span class="code-string">"PostgreSQL"</span>, <span class="code-string">"SQLite"</span>],
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">bots</span>: [<span class="code-string">"Telegram Bot API"</span>],
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">tools</span>: [<span class="code-string">"Git"</span>, <span class="code-string">"Figma"</span>, <span class="code-string">"Tailwind"</span>]
+<br>&nbsp;&nbsp;},
+<br>&nbsp;&nbsp;<span class="code-variable">qualities</span>: [
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Detail-obsessed"</span>,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Animation lover"</span>,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Clean code advocate"</span>,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Constant learner"</span>
+<br>&nbsp;&nbsp;]
+<br>};
+<br>
+<br><span class="code-fn">console</span>.<span class="code-fn">log</span>(<span class="code-string">"Always ready for new challenges! 🚀"</span>);
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       JOURNEY
+  ═══════════════════════════════════════════ -->
+  <section id="journey">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">My Journey</div>
+      <h2 class="section-title">From first line of code<br>to commercial projects.</h2>
+      <p class="section-subtitle" style="margin-top:1rem;">A timeline of growth, shipped in 3 years.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">First Steps in Programming</div>
+          <div class="timeline-desc">Discovered the world of code. Started learning Frontend fundamentals and created my first simple websites — ugly, but mine.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">Deep Dive into Web Development</div>
+          <div class="timeline-desc">Mastered HTML, CSS, and JavaScript at depth. Started building real interactive websites with animations, responsive layouts, and clean UX.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-title">Backend & Frameworks</div>
+          <div class="timeline-desc">Tackled Django, React, PostgreSQL, and API integrations. Built Telegram bots and started delivering full stack products end-to-end.</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-year">2026 — Now</div>
+          <div class="timeline-title">Commercial Projects</div>
+          <div class="timeline-desc">Building real products for real businesses — furniture e-commerce, employee tracking systems, restaurant Telegram bots, and custom SaaS. Building a personal brand.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Skills & Tech</div>
+      <h2 class="section-title">The tools I build with.</h2>
+      <p class="section-subtitle" style="margin-top:1rem;">Technologies and frameworks across the full stack.</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Frontend -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="0" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag cyan"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="skill-tag cyan"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span class="skill-tag cyan"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="skill-tag cyan"><i class="fa-solid fa-code"></i> TypeScript</span>
+          <span class="skill-tag cyan"><i class="fa-brands fa-react"></i> React</span>
+          <span class="skill-tag cyan"><i class="fa-solid fa-wind"></i> Tailwind</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="80" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag violet"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="skill-tag violet"><i class="fa-solid fa-server"></i> Django</span>
+          <span class="skill-tag violet"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="skill-tag violet"><i class="fa-solid fa-c"></i> C Language</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="160" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag green"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+          <span class="skill-tag green"><i class="fa-solid fa-database"></i> SQLite</span>
+          <span class="skill-tag green"><i class="fa-solid fa-table"></i> SQL</span>
+        </div>
+      </div>
+
+      <!-- Bots & APIs -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="240" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Bots & APIs</div>
+        <div class="skill-tags">
+          <span class="skill-tag cyan"><i class="fa-brands fa-telegram"></i> Telegram Bot API</span>
+          <span class="skill-tag cyan"><i class="fa-solid fa-plug"></i> REST APIs</span>
+        </div>
+      </div>
+
+      <!-- Design & Tools -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="320" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Design & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag amber"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="skill-tag amber"><i class="fa-solid fa-pen-nib"></i> Adobe XD</span>
+          <span class="skill-tag amber"><i class="fa-solid fa-palette"></i> UI/UX</span>
+        </div>
+      </div>
+
+      <!-- DevOps & Git -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="8" data-tilt-speed="400">
+        <div class="skill-cat-label">Version Control & Dev</div>
+        <div class="skill-tags">
+          <span class="skill-tag green"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="skill-tag green"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="skill-tag green"><i class="fa-solid fa-terminal"></i> CLI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qualities -->
+    <div class="qualities-row" data-aos="fade-up" data-aos-delay="100">
+      <div class="quality-item">
+        <div class="quality-icon">🔍</div>
+        <div class="quality-text">Attention to Detail</div>
+      </div>
+      <div class="quality-item">
+        <div class="quality-icon">✨</div>
+        <div class="quality-text">Passion for Animations</div>
+      </div>
+      <div class="quality-item">
+        <div class="quality-icon">🧹</div>
+        <div class="quality-text">Clean Code Advocate</div>
+      </div>
+      <div class="quality-item">
+        <div class="quality-icon">📚</div>
+        <div class="quality-text">Constant Learner</div>
+      </div>
+      <div class="quality-item">
+        <div class="quality-icon">🤝</div>
+        <div class="quality-text">Team Player</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Work</div>
+      <h2 class="section-title">Projects I'm proud of.</h2>
+      <p class="section-subtitle" style="margin-top:1rem;">From single-page sites to full-blown systems.</p>
+    </div>
+
+    <div class="project-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Websites</button>
+      <button class="filter-btn" data-filter="system">Systems</button>
+      <button class="filter-btn" data-filter="bot">Telegram Bots</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-category="system" data-aos="fade-up" data-aos-delay="0"
+           data-project-id="0" tabindex="0" role="button" aria-label="View MebelTime project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(0,229,255,0.1);">🏭</div>
+          <div class="project-links">
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">System</div>
+          <div class="project-title">MebelTime</div>
+          <div class="project-desc">Full-featured Django 5 workforce management system for a furniture manufacturing workshop. Attendance tracking, shift closing, salary calculations (hourly, piece-rate, mixed), and PDF/TXT report exports.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">Django 5</span>
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Bootstrap 5</span>
+            <span class="project-tech">SQLite</span>
+            <span class="project-tech">Chart.js</span>
+            <span class="project-tech">ReportLab</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="80"
+           data-project-id="1" tabindex="0" role="button" aria-label="View furniture shop project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(124,58,237,0.1);">🛋️</div>
+          <div class="project-links">
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">Website</div>
+          <div class="project-title">Furniture Store</div>
+          <div class="project-desc">Modern e-commerce website for a furniture shop. Product catalog, filtering, shopping cart, and a sleek responsive UI designed for conversion.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">HTML5</span>
+            <span class="project-tech">CSS3</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-category="bot" data-aos="fade-up" data-aos-delay="160"
+           data-project-id="2" tabindex="0" role="button" aria-label="View restaurant Telegram bot project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(52,211,153,0.1);">🍽️</div>
+          <div class="project-links">
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">Telegram Bot</div>
+          <div class="project-title">Restaurant Bot</div>
+          <div class="project-desc">Telegram bot for a restaurant enabling customers to browse menus, place orders, track order status, and receive notifications — all inside Telegram.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Telegram Bot API</span>
+            <span class="project-tech">Aiogram</span>
+            <span class="project-tech">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-category="bot" data-aos="fade-up" data-aos-delay="240"
+           data-project-id="3" tabindex="0" role="button" aria-label="View weather bot project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(251,191,36,0.1);">🌤️</div>
+          <div class="project-links">
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">Telegram Bot</div>
+          <div class="project-title">Weather Bot</div>
+          <div class="project-desc">Real-time weather Telegram bot that fetches forecasts for any city using OpenWeather API. Supports daily/weekly forecasts with clean formatted messages.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Telegram Bot API</span>
+            <span class="project-tech">OpenWeather API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="320"
+           data-project-id="4" tabindex="0" role="button" aria-label="View personal portfolio project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(0,229,255,0.1);">🌐</div>
+          <div class="project-links">
+            <a href="https://mmuinov.netlify.app" target="_blank" rel="noopener" class="project-link-btn" title="Live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">Website</div>
+          <div class="project-title">Personal Portfolio</div>
+          <div class="project-desc">This portfolio — a custom-built showcase with bilingual support (RU/EN), an anonymous message system, admin blog, and complex GSAP animations throughout.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">HTML5</span>
+            <span class="project-tech">CSS3</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">GSAP</span>
+            <span class="project-tech">Netlify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-category="system" data-aos="fade-up" data-aos-delay="400"
+           data-project-id="5" tabindex="0" role="button" aria-label="View accounting system project">
+        <div class="project-card-header">
+          <div class="project-icon-wrap" style="background:rgba(124,58,237,0.1);">📊</div>
+          <div class="project-links">
+            <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category text-gradient">System</div>
+          <div class="project-title">Employee Accounting System</div>
+          <div class="project-desc">Web-based employee and payroll management system with role-based access (Admin/Director/Employee), real-time dashboards, and automated salary reporting.</div>
+          <div class="project-tech-tags">
+            <span class="project-tech">Django</span>
+            <span class="project-tech">Python</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">AJAX</span>
+            <span class="project-tech">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="github-cta" data-aos="fade-up">
+      <p>These are just a few highlights. All 24+ repositories live on GitHub.</p>
+      <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="btn-primary">
+        <i class="fa-brands fa-github"></i> github.com/miraziz1off
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Services</div>
+      <h2 class="section-title">What I can build for you.</h2>
+      <p class="section-subtitle" style="margin-top:1rem;">End-to-end development from design to deployment.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-num">01</div>
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="service-title">Web Development</div>
+        <div class="service-desc">Modern, responsive websites and web apps built with clean code, optimized performance, and premium attention to visual detail.</div>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-num">02</div>
+        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+        <div class="service-title">Backend Systems</div>
+        <div class="service-desc">Django and Python-powered APIs, databases, admin panels, and automation — robust architectures that scale with your business.</div>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-num">03</div>
+        <div class="service-icon"><i class="fa-brands fa-telegram"></i></div>
+        <div class="service-title">Telegram Bots</div>
+        <div class="service-desc">Custom bots for ordering, support, notifications, admin tools, and more — turning Telegram into a powerful business channel.</div>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="service-num">04</div>
+        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="service-title">UI/UX Design</div>
+        <div class="service-desc">Interface design in Figma and Adobe XD — wireframes, prototypes, and final design systems that are both beautiful and functional.</div>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="service-num">05</div>
+        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="service-title">Business Systems</div>
+        <div class="service-desc">Custom CRMs, ERPs, attendance trackers, inventory systems, and analytics dashboards tailored exactly to your workflow.</div>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-num">06</div>
+        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="service-title">Animations & Motion</div>
+        <div class="service-desc">GSAP, CSS, and canvas-based animations that bring interfaces to life — smooth, purposeful, and genuinely memorable.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ACHIEVEMENTS
+  ═══════════════════════════════════════════ -->
+  <section id="achievements">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Milestones</div>
+      <h2 class="section-title">Numbers that matter.</h2>
+    </div>
+
+    <div class="achieve-grid">
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="achieve-emoji">🚀</div>
+        <div class="achieve-num" data-count="12">0</div>
+        <div class="achieve-label">Projects shipped</div>
+      </div>
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="achieve-emoji">📦</div>
+        <div class="achieve-num" data-count="24">0</div>
+        <div class="achieve-label">GitHub repositories</div>
+      </div>
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="achieve-emoji">⚡</div>
+        <div class="achieve-num" data-count="3">0</div>
+        <div class="achieve-label">Years of experience</div>
+      </div>
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="achieve-emoji">🛠️</div>
+        <div class="achieve-num" data-count="15">0</div>
+        <div class="achieve-label">Technologies mastered</div>
+      </div>
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="achieve-emoji">🤖</div>
+        <div class="achieve-num" data-count="5">0</div>
+        <div class="achieve-label">Telegram bots deployed</div>
+      </div>
+      <div class="achieve-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="achieve-emoji">🎯</div>
+        <div class="achieve-num" data-count="100">0</div>
+        <div class="achieve-label">% committed to craft</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BLOG PREVIEW
+  ═══════════════════════════════════════════ -->
+  <section id="blog">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Thoughts</div>
+      <h2 class="section-title">On code, life, and craft.</h2>
+      <p class="section-subtitle" style="margin-top:1rem;">Reflections from a developer who also boxes.</p>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="blog-cat">Development</div>
+        <div class="blog-title">Why animations are not just decoration</div>
+        <div class="blog-excerpt">Good motion design isn't cosmetic — it's communication. The way a UI moves tells users what to expect next, builds trust, and makes interfaces feel human.</div>
+        <div class="blog-meta">
+          <span>Miraziz Muinov</span>
+          <span>·</span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="blog-cat">Mindset</div>
+        <div class="blog-title">What boxing taught me about engineering</div>
+        <div class="blog-excerpt">Discipline. Recovery. The discipline to train when you don't feel like it maps exactly to the discipline to debug at midnight. Winning is a habit, not an event.</div>
+        <div class="blog-meta">
+          <span>Miraziz Muinov</span>
+          <span>·</span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="blog-cat">Career</div>
+        <div class="blog-title">Building a personal brand at 15</div>
+        <div class="blog-excerpt">You don't need a degree or 10 years of XP to ship things that matter. You need taste, consistency, and the courage to put your work out there before you think it's ready.</div>
+        <div class="blog-meta">
+          <span>Miraziz Muinov</span>
+          <span>·</span>
+          <span>2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-eyebrow">Contact</div>
+      <h2 class="section-title">Let's build something<br>remarkable together.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div data-aos="fade-right">
+        <div class="contact-copy">
+          <h3>Have a project in mind?</h3>
+          <p>I'm open to freelance projects, collaboration, and interesting conversations. Whether you need a website, a Telegram bot, or a custom system — let's talk.</p>
+        </div>
+
+        <div class="social-cards">
+          <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="social-card">
+            <div class="social-card-icon" style="background:rgba(255,255,255,0.06);">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">GitHub</div>
+              <div class="social-card-handle">github.com/miraziz1off</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+
+          <a href="https://t.me/mmuinov" target="_blank" rel="noopener" class="social-card">
+            <div class="social-card-icon" style="background:rgba(0,136,204,0.1);">
+              <i class="fa-brands fa-telegram" style="color:#29b6f6;"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">Telegram</div>
+              <div class="social-card-handle">@mmuinov</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+
+          <a href="mailto:miraziz1off@gmail.com" class="social-card">
+            <div class="social-card-icon" style="background:rgba(234,67,53,0.1);">
+              <i class="fa-solid fa-envelope" style="color:#f28b82;"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">Email</div>
+              <div class="social-card-handle">miraziz1off@gmail.com</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+
+          <a href="https://instagram.com/muinov770" target="_blank" rel="noopener" class="social-card">
+            <div class="social-card-icon" style="background:rgba(193,53,132,0.1);">
+              <i class="fa-brands fa-instagram" style="color:#e1306c;"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">Instagram</div>
+              <div class="social-card-handle">@muinov770</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@mu1nov" target="_blank" rel="noopener" class="social-card">
+            <div class="social-card-icon" style="background:rgba(255,0,80,0.08);">
+              <i class="fa-brands fa-tiktok" style="color:#ff0050;"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">TikTok</div>
+              <div class="social-card-handle">@mu1nov</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+
+          <a href="https://reddit.com/user/MicterRobot" target="_blank" rel="noopener" class="social-card">
+            <div class="social-card-icon" style="background:rgba(255,69,0,0.1);">
+              <i class="fa-brands fa-reddit-alien" style="color:#ff4500;"></i>
+            </div>
+            <div class="social-card-info">
+              <div class="social-card-name">Reddit</div>
+              <div class="social-card-handle">u/MicterRobot</div>
+            </div>
+            <i class="fa-solid fa-arrow-right social-card-arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form" data-aos="fade-left">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" placeholder="your@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" placeholder="Tell me about your project, idea, or just say hello..."></textarea>
+        </div>
+        <button class="btn-primary" id="cf-submit" style="width:100%; justify-content:center;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p id="cf-feedback" style="margin-top:1rem;font-size:0.85rem;color:#34d399;text-align:center;display:none;">
+          ✅ Message sent! I'll get back to you soon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">Miraziz.</span>
+        <p>15-year-old Full Stack Developer from Uzbekistan, building the web one elegant line at a time.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/miraziz1off" target="_blank" rel="noopener" class="footer-social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://t.me/mmuinov" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://instagram.com/muinov770" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:miraziz1off@gmail.com" class="footer-social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.tiktok.com/@mu1nov" target="_blank" rel="noopener" class="footer-social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Work</h4>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:miraziz1off@gmail.com">Email</a></li>
+          <li><a href="https://t.me/mmuinov" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://github.com/miraziz1off" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#contact">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Miraziz Muinov · All rights reserved.</p>
+      <div class="footer-made">
+        Made with <span class="heart">♥</span> in Uzbekistan 🇺🇿
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECT MODAL
+  ═══════════════════════════════════════════ -->
+  <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-cat" id="modal-cat"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <div class="modal-tech-list" id="modal-tech-list"></div>
+      <div class="modal-links" id="modal-links"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════════════ -->
+  <script>
+  // ─── Project data ────────────────────────────
+  const PROJECTS = [
+    {
+      id: 0,
+      category: "System",
+      title: "MebelTime",
+      desc: "Full-featured Django 5 workforce management system for a furniture manufacturing workshop. Tracks attendance with AJAX-powered arrive/lunch/leave buttons, handles automatic shift closing, calculates salary in three modes (hourly, piece-rate, mixed) with late-arrival deductions, provides a director dashboard with Chart.js visualizations, and exports payroll reports as PDF or TXT via ReportLab. Role-based access: Administrator, Director, Employee. Local-network-only deployment with timezone Asia/Tashkent.",
+      tech: ["Django 5", "Python", "Bootstrap 5", "SQLite", "Chart.js", "ReportLab", "AJAX"],
+      github: "https://github.com/miraziz1off",
+      live: null
+    },
+    {
+      id: 1,
+      category: "Website",
+      title: "Furniture Store",
+      desc: "Modern e-commerce website for a furniture retail business. Features a full product catalog with category filtering, a shopping cart, and a smooth mobile-first UI designed to drive conversions. Clean semantic HTML and vanilla JS, no framework dependencies.",
+      tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      github: "https://github.com/miraziz1off",
+      live: null
+    },
+    {
+      id: 2,
+      category: "Telegram Bot",
+      title: "Restaurant Bot",
+      desc: "Telegram bot for a restaurant that allows customers to browse menus, place orders, track order status in real time, and receive notifications — all without leaving Telegram. The kitchen staff has a separate admin interface to manage incoming orders.",
+      tech: ["Python", "Aiogram", "Telegram Bot API", "PostgreSQL"],
+      github: "https://github.com/miraziz1off",
+      live: null
+    },
+    {
+      id: 3,
+      category: "Telegram Bot",
+      title: "Weather Bot",
+      desc: "Real-time Telegram weather bot that fetches current and forecast data for any city using the OpenWeather API. Sends clean, formatted messages with temperature, humidity, wind speed, and daily/weekly summaries. Supports multiple cities per user with saved preferences.",
+      tech: ["Python", "Telegram Bot API", "OpenWeather API", "Requests"],
+      github: "https://github.com/miraziz1off",
+      live: null
+    },
+    {
+      id: 4,
+      category: "Website",
+      title: "Personal Portfolio",
+      desc: "This portfolio — a custom-built showcase with bilingual support (Russian/English), an anonymous message system that forwards directly to Telegram, an admin-gated blog with mood tracking, a gallery section, and complex GSAP + CSS animations throughout. Built as a single-page app with zero frameworks.",
+      tech: ["HTML5", "CSS3", "JavaScript", "GSAP", "Typed.js", "Netlify"],
+      github: "https://github.com/miraziz1off",
+      live: "https://mmuinov.netlify.app"
+    },
+    {
+      id: 5,
+      category: "System",
+      title: "Employee Accounting System",
+      desc: "Web-based employee and payroll management system with three role levels (Admin, Director, Employee). Features real-time dashboard with KPIs, attendance logging, salary calculation, payroll report generation, and secure local-network deployment. Built to replace spreadsheet-based HR workflows.",
+      tech: ["Django", "Python", "JavaScript", "AJAX", "PostgreSQL", "Bootstrap 5"],
+      github: "https://github.com/miraziz1off",
+      live: null
+    }
+  ];
+
+  // ─── Loader ──────────────────────────────────
+  (function initLoader() {
+    const bar = document.getElementById('loader-bar');
+    const pct = document.getElementById('loader-pct');
+    const logo = document.getElementById('loader-logo');
+    const tagline = document.getElementById('loader-tagline');
+
+    gsap.to(tagline, { opacity: 1, y: 0, duration: 0.6, delay: 0.2 });
+    gsap.to(logo, { opacity: 1, y: 0, duration: 0.6, delay: 0.5 });
+
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += Math.random() * 14 + 3;
+      if (progress >= 100) { progress = 100; clearInterval(interval); }
+      bar.style.width = progress + '%';
+      pct.textContent = Math.floor(progress) + '%';
+      if (progress >= 100) {
+        setTimeout(() => {
+          gsap.to('#loader', {
+            opacity: 0,
+            y: -30,
+            duration: 0.8,
+            ease: 'power2.inOut',
+            onComplete: () => {
+              document.getElementById('loader').style.display = 'none';
+              initHero();
+            }
+          });
+        }, 300);
+      }
+    }, 80);
+  })();
+
+  // ─── Lenis smooth scroll ─────────────────────
+  let lenis;
+  try {
+    lenis = new Lenis({ lerp: 0.08, smoothWheel: true });
+    function rafLoop(time) {
+      lenis.raf(time);
+      requestAnimationFrame(rafLoop);
+    }
+    requestAnimationFrame(rafLoop);
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(time => lenis.raf(time * 1000));
+    gsap.ticker.lagSmoothing(0);
+  } catch(e) {}
+
+  // ─── Scroll progress ─────────────────────────
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width = (scrolled / maxScroll * 100) + '%';
+  });
+
+  // ─── Custom cursor ────────────────────────────
+  const curDot = document.getElementById('cursor-dot');
+  const curRing = document.getElementById('cursor-ring');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    curDot.style.left = mx + 'px';
+    curDot.style.top = my + 'px';
+  });
+
+  (function animCursor() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    curRing.style.left = rx + 'px';
+    curRing.style.top = ry + 'px';
+    requestAnimationFrame(animCursor);
+  })();
+
+  document.addEventListener('mouseleave', () => {
+    curDot.style.opacity = '0';
+    curRing.style.opacity = '0';
+  });
+  document.addEventListener('mouseenter', () => {
+    curDot.style.opacity = '1';
+    curRing.style.opacity = '1';
+  });
+
+  // ─── Navbar ───────────────────────────────────
+  const navbar = document.getElementById('navbar');
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  document.querySelectorAll('#mobile-menu .mm-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ─── Particles canvas ────────────────────────
+  (function initParticles() {
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const colors = ['rgba(0,229,255,', 'rgba(124,58,237,', 'rgba(255,255,255,'];
+
+    for (let i = 0; i < 70; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.5 + 0.3,
+        dx: (Math.random() - 0.5) * 0.3,
+        dy: (Math.random() - 0.5) * 0.3,
+        c: colors[Math.floor(Math.random() * colors.length)],
+        a: Math.random() * 0.5 + 0.1
+      });
+    }
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0) p.x = W;
+        if (p.x > W) p.x = 0;
+        if (p.y < 0) p.y = H;
+        if (p.y > H) p.y = 0;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.c + p.a + ')';
+        ctx.fill();
+      });
+
+      // Draw connections
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = 'rgba(0,229,255,' + (0.06 * (1 - dist / 120)) + ')';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+  })();
+
+  // ─── GSAP + ScrollTrigger ────────────────────
+  gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+  // ─── Hero animations ─────────────────────────
+  function initHero() {
+    const tl = gsap.timeline({ delay: 0.2 });
+
+    tl.to('#hero-badge', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' })
+      .to('#hero-heading', { opacity: 1, duration: 0 }, '<')
+      .to('.hero-heading .line-inner', {
+        y: '0%',
+        stagger: 0.12,
+        duration: 0.9,
+        ease: 'power4.out'
+      }, '-=0.3')
+      .to('#hero-typed-wrap', { opacity: 1, duration: 0.4 }, '-=0.3')
+      .to('#hero-desc', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.2')
+      .to('#hero-actions', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3')
+      .to('#hero-stats', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3')
+      .to('#scroll-hint', { opacity: 1, duration: 0.6 }, '-=0.2');
+
+    // Avatar
+    gsap.to('#hero-avatar', { opacity: 1, x: 0, duration: 1, ease: 'power3.out', delay: 0.8 });
+
+    // Typed.js
+    new Typed('#hero-typed', {
+      strings: [
+        'Full Stack Developer',
+        'Django & Python Engineer',
+        'React & JS Developer',
+        'Telegram Bot Creator',
+        'UI/UX Enthusiast',
+        'Boxer & Tennis Player 🥊'
+      ],
+      typeSpeed: 48,
+      backSpeed: 28,
+      loop: true,
+      backDelay: 1800,
+      startDelay: 800
+    });
+
+    // Counter animation
+    setTimeout(animateCounters, 1400);
+  }
+
+  // ─── Animated counters ───────────────────────
+  function animateCounters() {
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.dataset.count);
+      let current = 0;
+      const step = target / 60;
+      const interval = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = Math.floor(current) + (el.textContent.includes('+') ? '+' : '');
+        if (current >= target) {
+          el.textContent = target + '+';
+          clearInterval(interval);
+        }
+      }, 22);
+    });
+  }
+
+  // Counters in achievements triggered by scroll
+  ScrollTrigger.create({
+    trigger: '#achievements',
+    start: 'top 70%',
+    once: true,
+    onEnter: () => {
+      document.querySelectorAll('#achievements [data-count]').forEach(el => {
+        const target = parseInt(el.dataset.count);
+        let current = 0;
+        const step = target / 60;
+        const interval = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = Math.floor(current) + '+';
+          if (current >= target) {
+            el.textContent = target + (target === 100 ? '%' : '+');
+            clearInterval(interval);
+          }
+        }, 22);
+      });
+    }
+  });
+
+  // ─── AOS init ────────────────────────────────
+  AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 80 });
+
+  // ─── VanillaTilt ─────────────────────────────
+  if (typeof VanillaTilt !== 'undefined') {
+    VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+      max: 8, speed: 400, glare: true, 'max-glare': 0.08
+    });
+  }
+
+  // ─── Project filters ─────────────────────────
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      projectCards.forEach(card => {
+        const cat = card.dataset.category;
+        const show = filter === 'all' ||
+          (filter === 'web' && cat === 'web') ||
+          (filter === 'system' && cat === 'system') ||
+          (filter === 'bot' && cat === 'bot');
+        card.style.display = show ? '' : 'none';
+        if (show) {
+          gsap.fromTo(card, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4 });
+        }
+      });
+    });
+  });
+
+  // ─── Project modals ──────────────────────────
+  const modal = document.getElementById('project-modal');
+  const modalCat = document.getElementById('modal-cat');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalTechList = document.getElementById('modal-tech-list');
+  const modalLinks = document.getElementById('modal-links');
+
+  function openModal(id) {
+    const p = PROJECTS[id];
+    if (!p) return;
+    modalCat.textContent = p.category;
+    modalCat.className = 'modal-cat text-gradient';
+    modalTitle.textContent = p.title;
+    modalDesc.textContent = p.desc;
+    modalTechList.innerHTML = p.tech.map(t =>
+      `<span class="project-tech">${t}</span>`
+    ).join('');
+    modalLinks.innerHTML = '';
+    if (p.github) modalLinks.innerHTML += `<a href="${p.github}" target="_blank" rel="noopener" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>`;
+    if (p.live) modalLinks.innerHTML += `<a href="${p.live}" target="_blank" rel="noopener" class="btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>`;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => openModal(+card.dataset.projectId));
+    card.addEventListener('keypress', e => { if (e.key === 'Enter') openModal(+card.dataset.projectId); });
+  });
+
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  document.getElementById('modal-backdrop').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // ─── Contact form ────────────────────────────
+  document.getElementById('cf-submit').addEventListener('click', () => {
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const msg = document.getElementById('cf-msg').value.trim();
+    if (!name || !email || !msg) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    // In a real deployment, this would POST to a backend.
+    // For now we show success feedback.
+    const feedback = document.getElementById('cf-feedback');
+    feedback.style.display = 'block';
+    gsap.fromTo(feedback, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4 });
+    ['cf-name','cf-email','cf-subject','cf-msg'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+  });
+
+  // ─── Parallax orbs on mouse ──────────────────
+  document.addEventListener('mousemove', e => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 30;
+    const y = (e.clientY / window.innerHeight - 0.5) * 30;
+    gsap.to('.orb-1', { x: -x, y: -y, duration: 2.5, ease: 'power2.out' });
+    gsap.to('.orb-2', { x: x * 0.7, y: y * 0.7, duration: 3, ease: 'power2.out' });
+  });
+
+  // ─── Scroll-triggered section glow ──────────
+  document.querySelectorAll('section').forEach(sec => {
+    ScrollTrigger.create({
+      trigger: sec,
+      start: 'top 60%',
+      end: 'bottom 40%',
+      onEnter: () => gsap.to(sec, { '--section-glow': 1, duration: 0.8 }),
+      onLeave: () => gsap.to(sec, { '--section-glow': 0, duration: 0.8 })
+    });
+  });
+
+  // ─── Navbar active section highlight ────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.style.color = link.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--accent-cyan)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(sec => observer.observe(sec));
+  </script>
 </body>
-<!-- ДОБАВЬ ПРЯМО ПОСЛЕ <body> -->
-<main style="display:none;">
-    <h1>Муинов Миразиз - Full Stack Разработчик</h1>
-    <h2>Муинов Миразиз - 15-летний frontend и backend разработчик из Узбекистана</h2>
-    <p>Персональный сайт портфолио Муинова Миразиза. Создание веб-сайтов, Telegram ботов, систем учета.</p>
-    <p>Стек технологий: Python, JavaScript, React, Django, HTML, CSS, TypeScript, PostgreSQL, Telegram Bot API.</p>
-    <p>Проекты: мебельный магазин, система учета сотрудников, Telegram бот для ресторана, погодный бот.</p>
-    <p>Контакты: GitHub miraziz1off, Telegram @mmuinov, Instagram @muinov770, Email miraziz1off@gmail.com.</p>
-</main>
 </html>
